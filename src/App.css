@@ -1,1 +1,65 @@
+/* General Styles */
+/* RWD Container */
 
+.container {
+  width:100%;
+  display:flex;
+  align-self: center;
+  margin:auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+} 
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+} 
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+} 
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+} 
+
+
+@media (min-width: 1600px) {
+  .container {
+    width: 100%;
+  }
+} 
+
+/*body */
+body{
+  font-size:large;
+  line-height:normal;
+  background-color: aquamarine;
+  color:aquamarine;
+}
+
+/* Layout*/
+.mainLayout{
+  
+}
+
+.layoutHeader{
+
+}
+
+.layoutFooter{
+
+}
+
+.layoutContent{
+
+}

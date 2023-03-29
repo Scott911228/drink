@@ -4,7 +4,7 @@ export default function Header({ title, nav }) {
     return (
         <div className={styles.header}>
             <p className={styles.headernav}>
-                {slogan}
+                {nav}
             </p>
         </div>
     );
