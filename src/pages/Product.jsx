@@ -3,9 +3,9 @@ import Header from "../Components/Header"
 import Footer from "../components/Footer"
 
 function Product(){
-    const { productId }=useParams();
+    const { productId } = useParams();
     const product = products.find(
-        (x)=> x.id ===productId
+        (x)=> x.id === productId
     );
 
     return(
@@ -18,7 +18,7 @@ function Product(){
             <productDetail product={product} className="layoutContent" />
             <Footer className="layoutFooter" />
         </div>
-    )
+    );
 }
 
 export default Product;

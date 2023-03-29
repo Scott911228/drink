@@ -48,18 +48,26 @@ body{
 }
 
 /* Layout*/
-.mainLayout{
-  
+.layoutHeader {
+  grid-area: header;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+  background-color: #111828;
 }
 
-.layoutHeader{
-
+.layoutFooter {
+  grid-area: footer;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+  background-color: #111828;
 }
 
-.layoutFooter{
-
+.layoutContent {
+  grid-area: content;
+  background-color: #111828;
 }
 
-.layoutContent{
 
-}
+
