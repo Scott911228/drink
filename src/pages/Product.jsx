@@ -12,7 +12,7 @@ function Product(){
         <div className="container mainLayout">
             <Header
                 className="layoutHeader"
-                title=""
+                title="drink shop"
                 nav=""
             />
             <productDetail product={product} className="layoutContent" />

@@ -6,7 +6,7 @@ function Home(){
             <Header 
                 className="layoutHeader"
                 title="飲料商品賣場"
-                nav=""
+                nav="最健康又養生的飲料都在這裡"
             />
             <ProductList products={products} className="latoutContent"/>
             <Footer className="layoutFooter"/>
