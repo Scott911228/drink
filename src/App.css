@@ -43,8 +43,7 @@
 body{
   font-size:large;
   line-height:normal;
-  background-color: #000000;
-  color: white;
+  color: rgb(63, 150, 221);
 }
 
 /* Layout*/
@@ -65,7 +64,6 @@ body{
   padding: 0;
   height: auto;
   line-height: 1.6;
-  background-color: #111828;
 }
 
 .layoutFooter {
@@ -73,12 +71,10 @@ body{
   padding: 0;
   height: auto;
   line-height: 1.6;
-  background-color: #111828;
 }
 
 .layoutContent {
   grid-area: content;
-  background-color: #111828;
 }
 
 

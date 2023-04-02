@@ -6,7 +6,7 @@ export default function Footer() {
             <hr className={styles.hrFooterLine} />
             <footer className={styles.footer}>
                 <div className={styles.content}>
-                    <p style={{fontweight:000}}>詳細資訊</p>
+                    <p style={{fontweight:800}}>關於我們</p>
                     <p style={{textIndent: '1rem'}}>Hi</p>
                 </div>
                 <div className={styles.follow}>
