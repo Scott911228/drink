@@ -5,7 +5,7 @@ function Home(){
         <div className="container mainLayout">
             <Header 
                 className="layoutHeader"
-                title=""
+                title="飲料商品賣場"
                 nav=""
             />
             <ProductList products={products} className="latoutContent"/>
