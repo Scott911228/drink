@@ -10,32 +10,32 @@
 
 @media (min-width: 576px) {
   .container {
-    width: 100%;
+    width: 540px;
   }
 } 
 
 @media (min-width: 768px) {
   .container {
-    width: 100%;
+    width: 720px;
   }
 } 
 
 @media (min-width: 992px) {
   .container {
-    width: 100%;
+    width: 960px;
   }
 } 
 
 @media (min-width: 1200px) {
   .container {
-    width: 100%;
+    width: 1140px;
   }
 } 
 
 
 @media (min-width: 1600px) {
   .container {
-    width: 100%;
+    width: 1500px;
   }
 } 
 
@@ -43,6 +43,7 @@
 body{
   font-size:large;
   line-height:normal;
+  background-color: #111828;
   color: rgb(63, 150, 221);
 }
 
@@ -64,6 +65,7 @@ body{
   padding: 0;
   height: auto;
   line-height: 1.6;
+  background-color: #426ed6;
 }
 
 .layoutFooter {

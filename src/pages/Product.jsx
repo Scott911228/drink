@@ -1,6 +1,8 @@
 import{ useParams } from 'react-router-dom';
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
+import ProductDetail from "../Components/ProductDetail";
+import products from "../json/products.json";
 
 function Product(){
     const { productId } = useParams();

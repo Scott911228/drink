@@ -7,6 +7,10 @@ export default function ProductList({ Products }) {
             {Products.map(product => (
                 <Col
                     key={product.id}
+                    sm={{ span: 12 }} 
+                    lg={{ span: 8 }}
+                    xl={{ span: 6 }}
+                    xxl={{ span: 4 }}
                 >
                     <ProductItem product={product} />
                 </Col>

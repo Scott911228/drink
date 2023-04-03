@@ -34,7 +34,7 @@ export default function ProductDetail({ product }) {
                     </p>
                     <div className={styles.wrap}>
                         <p className={styles.price} >
-                            US${product.price}.00
+                            TWD${product.price}.00
                         </p>
                         <AddToCart />
                     </div>
