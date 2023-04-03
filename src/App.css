@@ -58,6 +58,7 @@ body{
   ;
   grid-template-rows: auto 1fr auto;
   gap: 1em;
+  background-color: #d14d48;
 }
 
 .layoutHeader {
