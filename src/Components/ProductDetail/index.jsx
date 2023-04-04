@@ -1,5 +1,5 @@
 import { Row, Col } from "antd";
-import AddToCart from "../AddToCart"
+import AddToCart from "../addtoCart"
 import styles from "./productdetail.module.css"
 
 export default function ProductDetail({ product }) {
