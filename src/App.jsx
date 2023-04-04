@@ -2,9 +2,10 @@ import { useState } from 'react'
 import 'antd/dist/reset.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
+import './App.css';
 import Home from './pages/Home';
 import Product from './pages/Product';
-import './App.css'
+
 
 function App() {
   const [count, setCount] = useState(0)

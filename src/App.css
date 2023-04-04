@@ -57,16 +57,11 @@ body{
     'footer'
   ;
   grid-template-rows: auto 1fr auto;
-  gap: 1em;
-  background-color: #d14d48;
 }
 
 .layoutHeader {
   grid-area: header;
-  padding: 0;
-  height: auto;
   line-height: 1.6;
-  background-color: #426ed6;
 }
 
 .layoutFooter {

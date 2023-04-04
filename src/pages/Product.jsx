@@ -17,7 +17,7 @@ function Product(){
                 title="drink shop"
                 nav=""
             />
-            <productDetail product={product} className="layoutContent" />
+            <ProductDetail product={product} className="layoutContent" />
             <Footer className="layoutFooter" />
         </div>
     );
