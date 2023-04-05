@@ -1,0 +1,8 @@
+.image{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}

@@ -22,13 +22,14 @@ export default function ProductItem({ product }) {
                {product.description}
             </p>
             <div className={styles.more}>
-               <Link to={`/products/id/${product.id}`} className={styles.link}>
-                  See More ...
-               </Link>
                <span
                   className={styles.textGray}>
-                  USD {product.price}.00
+                  {product.price}元 &nbsp;
                </span>
+
+               <Link to={`/products/id/${product.id}`} className={styles.link}>
+                  查看更多... 
+               </Link>
             </div>
          </div>
       </div>
