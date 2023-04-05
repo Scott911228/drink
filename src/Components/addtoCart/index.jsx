@@ -8,7 +8,7 @@ export default function AddToCart() {
       fontSize: '1.2rem',
       padding: '0.5rem 2rem',
     }}>
-      Add To Cart.
+      加到購物車
     </Button>
   );
 }

@@ -1,10 +1,12 @@
+import { ShoppingCartOutlined } from '@ant-design/icons';
+import { Button, Space } from 'antd';
 import { Link } from "react-router-dom"
 import styles from "./header.module.css";
 export default function Header({ title, nav }) {
     return (
         <div className={styles.header}>
 
-            <Link to="/" style={{textDecoration:"none"}}>
+            <Link to="/" style={{ textDecoration: "none" }}>
                 <span className={styles.headerTitle}>
                     {title}
                 </span>
@@ -28,13 +30,16 @@ export default function Header({ title, nav }) {
                     <li className={styles.navlist_item}>
                         <a href="#">聯絡</a>
                     </li>
+                        <Button type="primary" icon={<ShoppingCartOutlined />} style={{
+                            marginLeft:'50px',
+                            height:'40px'
+                        }}>
+                            前往購物車
+                        </Button>
 
-                    <button className={styles.cart_link}>
-                        
-                    </button>
                 </ul>
             </nav>
-            <hr className={styles.hrHeaderLine}/>
+            <hr className={styles.hrHeaderLine} />
         </div>
     );
 
