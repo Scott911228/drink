@@ -7,24 +7,21 @@ export default function ProductItem({ product }) {
       <div className={styles.item}>
         <Link to={`/products/id/${product.id}`}>
             <img
-               style={{ width: '100%' }}
+               style={{ width: '100%' , height: "380px" }}
                src={product.image}
                alt={product.name} />
          </Link>
          <div className={styles.info}>
-            <h6 className={styles.category}>
-               {product.category}
-            </h6>
-            <h2 className={styles.name}>
+            <h1 className={styles.name}>
                {product.name}
-            </h2>
-            <p className={styles.description}>
+            </h1>
+            <span className={styles.description}>
                {product.description}
-            </p>
+            </span>
             <div className={styles.more}>
                <span
                   className={styles.textGray}>
-                  {product.price}元 &nbsp;
+                  NT$ {product.price}
                </span>
 
                <Link to={`/products/id/${product.id}`} className={styles.link}>

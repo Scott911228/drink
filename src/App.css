@@ -43,7 +43,7 @@
 body{
   font-size:large;
   line-height:normal;
-  background-color: #111828;
+  background-color: #171e2d;
   color: rgb(63, 150, 221);
 }
 
@@ -61,6 +61,7 @@ body{
 
 .layoutHeader {
   grid-area: header;
+  height: auto;
   line-height: 1.6;
 }
 
