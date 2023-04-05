@@ -31,11 +31,11 @@ export default function ProductDetail({ product }) {
                         {product.name}
                     </h1>
                     <p className={styles.description}>
-                        {product.description_long}
+                        {product.description}
                     </p>
                     <div className={styles.wrap}>
                         <p className={styles.price} >
-                            TWD${product.price}.00
+                            {product.price}元
                         </p>
                         <AddToCart />
                     </div>
