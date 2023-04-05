@@ -2,91 +2,66 @@
     {
         "id": "1",
         "category": "cold-brew-tea",
-        "name": "mountain-tea",
+        "name": "冷泡茶",
         "price": "40",
         "image": "/images/drink1.jpg",
-        "description": "",
-        "description_long": "",
         "currency": "TWD"
     },
     {
         "id": "2",
         "category": "milk-tea",
-        "name": "bubble-milk-tea",
+        "name": "珍珠鮮奶茶",
         "price": "55",
         "image": "/images/drink2.jpg",
-        "description": "",
-        "description_long": "",
         "currency": "TWD"
     },
     {
         "id": "3",
         "category": "aura",
-        "name": "butterfly-tea",
+        "name": "蝶豆花茶系列",
         "price": "50",
         "image": "/images/drink3.jpg",
-        "description": "",
-        "description_long": "",
         "currency": "TWD"
     },
     {
         "id": "4",
         "category": "frozen-grass-milk",
-        "name": "black-sugar-milk",
+        "name": "黑糖仙草凍奶",
         "price": "60",
         "image": "/images/drink4.jpg",
-        "description": "",
-        "description_long": "",
         "currency": "TWD"
     },
     {
         "id": "5",
         "category": "ginger-tea",
-        "name": "red-dates-and-wolfberry-tea",
+        "name": "薑汁枸杞茶",
         "price": "50",
         "image": "/images/drink5.jpg",
-        "description": "",
-        "description_long": "",
         "currency": "TWD"
     },
     {
         "id": "6",
         "category": "health-tea",
-        "name": "black-fongus-tea",
+        "name": "黑木耳汁",
         "price": "45",
         "image": "/images/drink6.jpg",
-        "description": "",
-        "description_long": "",
         "currency": "TWD"
     },
     {
         "id": "7",
         "category": "carambola-juice",
-        "name": "sugar-carambola-juice",
+        "name": "楊桃汁系列",
         "price": "50",
         "image": "/images/drink7.jpg",
-        "description": "",
-        "description_long": "",
         "currency": "TWD"
     },
     {
         "id": "8",
-        "category": "lotus-seed-soup",
-        "name": "crystal-sugar-lotus-seed-soup",
+        "category": "fruit-milk",
+        "name": "香蕉牛奶",
         "price": "50",
-        "image": "/images/drink8.jpg",
-        "description": "",
-        "description_long": "",
-        "currency": "TWD"
-    },
-    {
-        "id": "9",
-        "catego8ry": "fruit-milk",
-        "name": "banana-milk",
-        "price": "50",
-        "image": "/images/drink8.jpg",
-        "description": "",
-        "description_long": "",
+        "image": "/images/drink9.jpg",
         "currency": "TWD"
     }
+
 ]

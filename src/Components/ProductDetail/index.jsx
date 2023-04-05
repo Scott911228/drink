@@ -7,6 +7,7 @@ export default function ProductDetail({ product }) {
     return (
         <Row gutter={[32, 32]}
             style={{ justifyContent: 'center' }}
+            
         >
             <Col
                 xs={{ span: 24 }}

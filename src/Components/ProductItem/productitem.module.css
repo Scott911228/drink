@@ -1,0 +1,13 @@
+.item {
+    color: white;
+}
+
+.info {
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.more {
+    font-size: 24px;
+}

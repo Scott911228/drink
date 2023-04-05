@@ -3,15 +3,37 @@ import styles from "./header.module.css";
 export default function Header({ title, nav }) {
     return (
         <div className={styles.header}>
+
             <Link to="/" style={{textDecoration:"none"}}>
-                <h1 className={styles.headerTitle}>
+                <span className={styles.headerTitle}>
                     {title}
-                </h1>
+                </span>
             </Link>
 
-            <p className={styles.headerNav}>
-                {nav}
-            </p>
+            <nav className={styles.nav}>
+                <ul className={styles.navlist}>
+
+                    <li className={styles.navlist_item}>
+                        <a href="#">關於</a>
+                    </li>
+
+                    <li className={styles.navlist_item}>
+                        <a href="#">產品</a>
+                    </li>
+
+                    <li className={styles.navlist_item}>
+                        <a href="#">消息</a>
+                    </li>
+
+                    <li className={styles.navlist_item}>
+                        <a href="#">聯絡</a>
+                    </li>
+
+                    <button className={styles.cart_link}>
+                        
+                    </button>
+                </ul>
+            </nav>
             <hr className={styles.hrHeaderLine}/>
         </div>
     );
