@@ -10,7 +10,11 @@
 }
 
 .headerTitle {
-    font-size: 2.0rem;
+    font-size: 2.4rem;
+}
+
+.headernav{
+    font-size: 1.6rem;
 }
 
 .nav {

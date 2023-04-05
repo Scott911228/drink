@@ -11,10 +11,13 @@ export default function Header({ title, nav }) {
                     {title}
                 </span>
             </Link>
+            <br></br> <br></br>
+            <span className={styles.headernav}>
+                {nav}
+            </span>
 
             <nav className={styles.nav}>
                 <ul className={styles.navlist}>
-
                     <li className={styles.navlist_item}>
                         <a href="#">關於</a>
                     </li>
@@ -30,12 +33,12 @@ export default function Header({ title, nav }) {
                     <li className={styles.navlist_item}>
                         <a href="#">聯絡</a>
                     </li>
-                        <Button type="primary" icon={<ShoppingCartOutlined />} style={{
-                            marginLeft:'50px',
-                            height:'40px'
-                        }}>
-                            前往購物車
-                        </Button>
+                    <Button type="primary" icon={<ShoppingCartOutlined />} style={{
+                        marginLeft: '50px',
+                        height: '40px'
+                    }}>
+                        前往購物車
+                    </Button>
 
                 </ul>
             </nav>
