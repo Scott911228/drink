@@ -1,4 +1,4 @@
-.image{
+.image {
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -7,10 +7,19 @@
     padding-bottom: 0;
 }
 
-.description{
+.description {
     font-size: 24px;
 }
 
-.price{
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
     font-size: 20px;
+}
+
+.selectStyle{
+    background-color: rgb(196, 58, 58);
 }
