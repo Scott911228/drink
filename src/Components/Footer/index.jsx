@@ -2,7 +2,7 @@ import styles from './footer.module.css';
 
 export default function Footer() {
     return (
-        <div>
+        <div className={styles.foot}>
             <hr className={styles.hrFooterLine} />
             <footer className={styles.footer}>
                 <div className={styles.content}>

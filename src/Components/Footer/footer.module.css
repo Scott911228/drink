@@ -1,3 +1,5 @@
+
+
 .footer{
     display: grid;
     padding-right: 1rem;
@@ -17,7 +19,7 @@
     width: 100%;
     border: 0;
     border-top: solid 2px;
-    border-color: #21238d;
+    border-color: #525256;
     opacity: 1;
     border-radius: 0.2rem;
  }

@@ -1,5 +1,5 @@
 import { ShoppingCartOutlined } from '@ant-design/icons';
-import { Button, Space } from 'antd';
+import { Button } from 'antd';
 import { Link } from "react-router-dom"
 import styles from "./header.module.css";
 export default function Header({ title, nav }) {
@@ -30,11 +30,13 @@ export default function Header({ title, nav }) {
                     <li className={styles.navlist_item}>
                         <a href="#">聯絡</a>
                     </li>
-                        <Button type="primary" icon={<ShoppingCartOutlined />} style={{
+                        <Button type="primary" shape='circle' icon={<ShoppingCartOutlined />} style={{
+                            backgroundColor:'green',
+                            fontSize:'22px',
                             marginLeft:'50px',
-                            height:'40px'
+                            height:'50px',
+                            width:'50px'
                         }}>
-                            前往購物車
                         </Button>
 
                 </ul>
