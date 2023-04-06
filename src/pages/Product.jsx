@@ -15,7 +15,7 @@ function Product(){
             <Header
                 className="layoutHeader"
                 title="飲料商品賣場"
-                nav="購物車"
+                nav=""
             />
             <ProductDetail product={product} className="layoutContent" />
             <Footer className="layoutFooter" />

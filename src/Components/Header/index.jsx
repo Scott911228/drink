@@ -31,7 +31,7 @@ export default function Header({ title, nav }) {
                     </li>
 
                     <li className={styles.navlist_item}>
-                        <a href="#">聯絡</a>
+                        <a href="#footer">聯絡</a>
                     </li>
                     <Button type="primary" shape='circle' icon={<ShoppingCartOutlined />} style={{
                         backgroundColor: 'green',

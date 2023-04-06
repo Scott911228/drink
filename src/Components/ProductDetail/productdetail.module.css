@@ -7,8 +7,12 @@
     padding-bottom: 0;
 }
 
+.col {
+    display: flex;
+}
+
 .description {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .wrap {
@@ -17,9 +21,20 @@
 }
 
 .pricename {
-    font-size: 1.5rem;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.status {
+    font-size: 20px;
+    color: rgb(161, 161, 161);
 }
 
 .selectStyle{
     background-color: rgb(196, 58, 58);
+}
+
+.qty {
+    font-size: 16px;
+    margin-right: 30px;
 }

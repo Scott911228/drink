@@ -37,33 +37,39 @@ export default function ProductDetail({ product }) {
                         {product.description}
                     </p>
                     <div className={styles.wrap}>
-                        <p className={styles.pricename} >
-                            {product.pricename}元
-                        </p>
-                        <p className={styles.status}>
-                            庫存: {product.countInStock > 0 ? "尚有" : "缺貨"}
-                        </p>
-                        <div className={styles.qty}>
-                            數量: {"   "}
-                            <Select
-                                defaultValue={qty}
-                                key={qty}
-                                className={styles.selectStyle}
-                                onChange={val => setQty(val)}
-                            >
-                                {[...Array(product.countInStock).keys()].map((x) => (
-                                    <Option key={x + 1} value={x + 1}>
-                                        {x + 1}
-                                    </Option>
-                                ))}
-                            </Select>
+                        <div className={styles.col}>
+                            <p className={styles.pricename} >
+                                {product.pricename}元
+                            </p>
+                            <p className={styles.status}>
+                                庫存: {product.countInStock > 0 ? "尚有" : "缺貨"}
+                            </p>
                         </div>
-                        <p className={styles.qty}>
-                            總價格: {product.price * qty}
-                        </p>
+
+                        <div className={styles.col}>
+                            <div className={styles.qty}>
+                                數量: {"   "}
+                                <Select
+                                    defaultValue={qty}
+                                    key={qty}
+                                    className={styles.selectStyle}
+                                    onChange={val => setQty(val)}
+                                >
+                                    {[...Array(product.countInStock).keys()].map((x) => (
+                                        <Option key={x + 1} value={x + 1}>
+                                            {x + 1}
+                                        </Option>
+                                    ))}
+                                </Select>
+                            </div>
+                            <p className={styles.qty}>
+                                總價格: {product.price * qty}
+                            </p>
+                        </div>
+
                         <div className={styles.ice}>
                             冰塊:{"  "}
-                            
+
                         </div>
                         <AddToCart />
                     </div>

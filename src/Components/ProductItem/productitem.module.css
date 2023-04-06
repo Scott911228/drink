@@ -4,5 +4,9 @@
 }
 
 .more {
-    font-size: 16px;
+    font-size: 20px;
+}
+
+.link {
+    color: rgb(162, 158, 158);
 }
