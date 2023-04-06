@@ -1,6 +1,7 @@
 /* General Styles */
 /* RWD Container */
 
+
 .container {
   width:100%;
   display:flex;
@@ -35,7 +36,7 @@
 
 @media (min-width: 1600px) {
   .container {
-    width: 1500px;
+    width: 1200px;
   }
 } 
 

@@ -10,6 +10,24 @@ export default function Footer() {
                 </div>
                 <div className={styles.follow}>
                     <p style={{fontWeight: 800}}>跟隨我們</p>
+
+                    <ul className={styles.imagelist}>
+                    <li className={styles.imagelist_item}>
+                        <a href="https://zh-tw.facebook.com/"><img src="images/facebook.jpg" width="60" height="60"></img></a>
+                    </li>
+                    <li className={styles.imagelist_item}>
+                        <a href="https://www.instagram.com/"><img src="images/instagram.jpg" width="60" height="60"></img></a>
+                    </li>
+
+                    <li className={styles.imagelist_item}>
+                        <a href="https://www.foodpanda.com.tw/"><img src="images/foodpanda.jpg" width="60" height="60"></img></a>
+                    </li>
+
+                    <li className={styles.imagelist_item}>
+                        <a href="https://www.ubereats.com"><img src="images/ubereats.jpg" width="60" height="60"></img></a>
+                    </li>
+
+                </ul>
                 </div>
             </footer>
         </div>

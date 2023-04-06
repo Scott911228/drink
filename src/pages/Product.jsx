@@ -14,8 +14,8 @@ function Product(){
         <div className="container mainLayout">
             <Header
                 className="layoutHeader"
-                title="drink shop"
-                nav=""
+                title="飲料商品賣場"
+                nav="購物車"
             />
             <ProductDetail product={product} className="layoutContent" />
             <Footer className="layoutFooter" />

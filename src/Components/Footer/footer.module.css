@@ -1,16 +1,15 @@
 
-
-.footer{
-    display: grid;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    grid-template-areas: 
+.footer {
+   display: grid;
+   padding-right: 1rem;
+   padding-left: 1rem;
+   grid-template-areas:
       'content follow contactUs'
       'copyRight copyRight copyRight'
-    ;
-    grid-template-rows: auto 3rem;
-    grid-template-columns: 12fr 2fr minmax(7rem, 1fr);
-    gap: 1em,    
+   ;
+   grid-template-rows: auto 3rem;
+   grid-template-columns: 12fr 2fr minmax(7rem, 1fr);
+   gap: 1em,
 }
 
 .hrFooterLine {
@@ -28,6 +27,26 @@
     grid-area: content;
  }
 
- .follow {
-    grid-area: follow;
- }
+.imagelist {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+   margin-bottom: 0;
+}
+
+.imagelist_item {
+   margin-left: 3px;
+   font-size: 1.5rem;
+   
+}
+
+.content {
+   grid-area: content;
+}
+
+.follow {
+   grid-area: follow;
+   justify-content: center;
+   align-items: center;
+}

@@ -20,6 +20,7 @@ export default function ProductItem({ product }) {
                   className={styles.textGray}>
                   {product.price}元 &nbsp;
                </span>
+               <br></br> 
                <br></br>
                <Link to={`/products/id/${product.id}`} className={styles.link}>
                   查看更多...
