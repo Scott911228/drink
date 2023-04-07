@@ -5,7 +5,6 @@ import styles from "./productdetail.module.css";
 const { Option } = Select;
 
 export default function ProductDetail({ product }) {
-
     const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
     const ice = (value) => {
         console.log('selected $[value]');
@@ -60,7 +59,6 @@ export default function ProductDetail({ product }) {
                                 className={styles.amount}
                                 onChange={val => setQty(val)}
                             >
-
                                 {[...Array(product.countInStock).keys()].map((x) => (
                                     <Option key={x + 1} value={x + 1}>
                                         {x + 1}
@@ -108,7 +106,6 @@ export default function ProductDetail({ product }) {
                         </div>
                         
                         <br></br>
-
                         <AddToCart product={product} qty={qty} />
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import { addCartItems, removeCartItems } from "../../redux/cartSlice";
 import styles from "./basketmodal.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
+
 import { selectCartItems } from "../../redux/cartSlice";
 const { Option } = Select;
 
@@ -24,6 +25,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
       <Modal
          title=""
          style={{ width: '50%' }}
+
          open={isOpen}
          onCancel={handleCancel}
          footer={null}

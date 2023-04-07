@@ -1,4 +1,4 @@
-import { Button,notification } from "antd"
+import { Button, notification } from "antd"
 import { useDispatch } from "react-redux";
 import { addCartItems } from "../../redux/cartSlice";
 import styles from "./addtoCart.module.css"
@@ -11,7 +11,7 @@ export default function AddToCart({ product, qty }) {
       message: '購買通知',
       description:
         `${qty} 杯 ${product.name} 已加入購物車`,
-      placement: 'bottomRight' 
+      placement: 'bottomRight'
     });
   };
 
@@ -28,7 +28,7 @@ export default function AddToCart({ product, qty }) {
   };
   return (
     <Button type="primary" className={styles.btn} onClick={addtoCart}>
-      <span>加入購物車</span> 
+      <span>加入購物車</span>
     </Button>
   );
 }
