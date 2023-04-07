@@ -1,4 +1,4 @@
-import { Button } from "antd"
+import { Button,notification } from "antd"
 import { useDispatch } from "react-redux";
 import { addCartItems } from "../../redux/cartSlice";
 import styles from "./addtoCart.module.css"
@@ -10,8 +10,8 @@ export default function AddToCart({ product, qty }) {
     notification.open({
       message: '購買通知',
       description:
-        `${qty} ${qty > 1 ? "pieces" : "piece"} of ${product.name} ${qty > 1 ? "have" : "has"} 已加入購物車`,
-      placement: 'bottomRight'
+        `${qty} 杯 ${product.name} 已加入購物車`,
+      placement: 'bottomRight' 
     });
   };
 
