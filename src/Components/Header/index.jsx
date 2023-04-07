@@ -1,7 +1,7 @@
-import { ShoppingCartOutlined } from '@ant-design/icons';
-import { Button } from 'antd';
 import { Link } from "react-router-dom"
 import styles from "./header.module.css";
+import CartSummary from "../CartSummary";
+
 export default function Header({ title, nav }) {
     return (
         <div className={styles.header}>
@@ -31,19 +31,14 @@ export default function Header({ title, nav }) {
                     </li>
 
                     <li className={styles.navlist_item}>
-                        <a href="#footer">聯絡</a>
+                        <a href="#">聯絡</a>
                     </li>
-                    <Button type="primary" shape='circle' icon={<ShoppingCartOutlined />} style={{
-                        backgroundColor: 'green',
-                        fontSize: '22px',
-                        marginLeft: '50px',
-                        height: '50px',
-                        width: '50px'
-                    }}>
-                    </Button>
-
+                    <div>
+                        <CartSummary />
+                    </div>
                 </ul>
             </nav>
+
             <hr className={styles.hrHeaderLine} />
         </div>
     );

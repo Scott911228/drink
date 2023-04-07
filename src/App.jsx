@@ -1,7 +1,11 @@
 
 import 'antd/dist/reset.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import { ConfigProvider } from 'antd';
+import { Provider } from "react-redux";
+import { HelmetProvider } from 'react-helmet-async'
+import store from './redux/store';
+import { darkTheme, lightTheme } from './theme';
 import './App.css';
 import Home from './pages/Home';
 import Product from './pages/Product';
@@ -10,15 +14,21 @@ import Product from './pages/Product';
 function App() {
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="products">
-          <Route path="category/:categoryName" element={<Home />} />
-          <Route path="id/:productId" element={ <Product />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <ConfigProvider theme={darkTheme} >
+      <HelmetProvider context={{}}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="products">
+              <Route path="category/:categoryName" element={<Home />} />
+              <Route path="id/:productId" element={<Product />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+        </HelmetProvider>
+      </ConfigProvider>
+    </Provider>
   );
 }
 
