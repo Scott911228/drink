@@ -19,7 +19,7 @@ export default function CartSummary() {
     <>
       <nav onClick={toggleOpen} className={styles.cartSummary} >
         <Badge count={count} color="#6366F2" style={{color: 'white'}}>
-          <CartIcon size={32} color={colorTextBase} />
+          <CartIcon size={40} color={colorTextBase} />
         </Badge>
       </nav>    
       <BasketModal

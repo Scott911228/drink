@@ -1,11 +1,11 @@
 import { Row, Col, Select} from "antd";
 import AddToCart from "../addtoCart";
 import { useState } from 'react';
-const { Option } = Select;
 import styles from "./productdetail.module.css";
-
+const { Option } = Select;
 
 export default function ProductDetail({ product }) {
+    
     const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
     const ice = (value) => {
         console.log('selected $[value]');
@@ -57,6 +57,7 @@ export default function ProductDetail({ product }) {
                                 className={styles.amount}
                                 onChange={val => setQty(val)}
                             >
+                                
                                 {[...Array(product.countInStock).keys()].map((x) => (
                                     <Option key={x + 1} value={x + 1}>
                                         {x + 1}
@@ -69,10 +70,10 @@ export default function ProductDetail({ product }) {
                             冰塊:{"  "}
                             <Select
                                 defaultValue={"正常冰"}
-                                style={{ width: 50 }}
+                                style={{ width: 50}}
                                 onChange={ice}
                                 options={[
-                                    { value: '少冰', label: '少冰' },
+                                    { value: '少冰', label: '少冰', color:'#000000' },
                                     { value: '微冰', label: '微冰' },
                                     { value: '正常冰', label: '正常冰' },
                                     { value: '去冰', label: '去冰' }
@@ -84,7 +85,7 @@ export default function ProductDetail({ product }) {
                             甜度:{"  "}
                             <Select
                                 defaultValue={"正常甜"}
-                                style={{ width: 70 }}
+                                style={{ width: 70, } }
                                 onChange={sweet}
                                 options={[
                                     { value: '正常糖', label: '正常糖' },
