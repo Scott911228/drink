@@ -1,14 +1,34 @@
 import { Button } from "antd"
+import { useDispatch } from "react-redux";
+import { addCartItems } from "../../redux/cartSlice";
+import styles from "./addtoCart.module.css"
 
-export default function AddToCart() {
+export default function AddToCart({ product, qty }) {
+  const dispatch = useDispatch();
 
+  const openNotification = () => {
+    notification.open({
+      message: '購買通知',
+      description:
+        `${qty} ${qty > 1 ? "pieces" : "piece"} of ${product.name} ${qty > 1 ? "have" : "has"} 已加入購物車`,
+      placement: 'bottomRight'
+    });
+  };
+
+  const addtoCart = () => {
+    openNotification();
+    dispatch(addCartItems({
+      id: product.id,
+      name: product.name,
+      image: product.image,
+      price: product.price,
+      countInStock: product.countInStock,
+      qty,
+    }))
+  };
   return (
-    <Button type="primary" style={{
-      height: 'auto',
-      fontSize: '1.2rem',
-      padding: '0.5rem 2rem',
-    }}>
-      加到購物車
+    <Button type="primary" className={styles.btn} onClick={addtoCart}>
+      加入購物車
     </Button>
   );
 }

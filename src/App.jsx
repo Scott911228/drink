@@ -2,16 +2,18 @@
 import 'antd/dist/reset.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ConfigProvider } from 'antd';
+import { Provider } from "react-redux";
+import store from './redux/store';
 
 import './App.css';
 import Home from './pages/Home';
 import Product from './pages/Product';
-import { darkTheme, lightTheme } from './theme';
 
 
 function App() {
 
   return (
+    <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -21,6 +23,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </Provider>
   );
 }
 

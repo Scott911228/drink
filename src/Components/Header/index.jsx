@@ -2,6 +2,8 @@ import { ShoppingCartOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { Link } from "react-router-dom"
 import styles from "./header.module.css";
+import CartSummary from "../CartSummary";
+
 export default function Header({ title, nav }) {
     return (
         <div className={styles.header}>
@@ -41,9 +43,9 @@ export default function Header({ title, nav }) {
                         width: '50px'
                     }}>
                     </Button>
-
                 </ul>
             </nav>
+            <CartSummary />
             <hr className={styles.hrHeaderLine} />
         </div>
     );

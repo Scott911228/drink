@@ -1,14 +1,13 @@
-
 .footer {
    display: grid;
    padding-right: 1rem;
    padding-left: 1rem;
-   grid-template-areas:
-      'content follow contactUs'
-      'copyRight copyRight copyRight'
-   ;
-   grid-template-rows: auto 3rem;
-   grid-template-columns: 12fr 2fr minmax(7rem, 1fr);
+   grid-template-areas: 
+    'follow'
+    'content'
+    'contactUs'
+  ;
+   grid-template-rows: auto 1rem;
    gap: 1em,
 }
 
@@ -32,13 +31,25 @@
    justify-content: center;
    align-items: center;
    padding: 0;
-   margin-bottom: 0;
 }
 
 .imagelist_item {
-   margin-left: 3px;
+   margin-left: 30px;
    font-size: 1.5rem;
-   
+
+}
+
+.contentlist {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+}
+
+.contentlist_item {
+   margin-left: 50px;
+   font-size: 1.2rem;
+
 }
 
 .content {
@@ -47,6 +58,4 @@
 
 .follow {
    grid-area: follow;
-   justify-content: center;
-   align-items: center;
 }
