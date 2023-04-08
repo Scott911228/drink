@@ -1,4 +1,4 @@
-import { Modal, Button, Select } from "antd";
+import { Modal, Button, Select, theme } from "antd";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addCartItems, removeCartItems } from "../../redux/cartSlice";
@@ -11,6 +11,7 @@ import { selectCartItems } from "../../redux/cartSlice";
 const { Option } = Select;
 
 export default function BasketModal({ isOpen, toggleModal }) {
+   const { token: { colorTextBase } } = theme.useToken();
    const dispatch = useDispatch();
    const cartItems = useSelector(selectCartItems);
 

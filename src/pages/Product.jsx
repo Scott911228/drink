@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { theme } from 'antd';
+import { Helmet } from "react-helmet-async"
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import ProductDetail from "../Components/ProductDetail";
@@ -16,6 +17,15 @@ function Product() {
 
     return (
         <div className="container mainLayout">
+            <Helmet>
+                <title>商品列表</title>
+                <style>{`
+               body { 
+                  background-color: ${colorBgBase}; 
+                  color: ${colorTextBase}
+               }
+            `}</style>
+            </Helmet>
             <Header
                 className="layoutHeader"
                 title="飲料商品賣場"
