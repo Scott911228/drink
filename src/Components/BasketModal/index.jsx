@@ -1,4 +1,4 @@
-import { Modal, Button, Select } from "antd";
+import { Modal, Button, Select, theme } from "antd";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addCartItems, removeCartItems } from "../../redux/cartSlice";
@@ -11,6 +11,7 @@ import { selectCartItems } from "../../redux/cartSlice";
 const { Option } = Select;
 
 export default function BasketModal({ isOpen, toggleModal }) {
+   const { token: { colorTextBase } } = theme.useToken();
    const dispatch = useDispatch();
    const cartItems = useSelector(selectCartItems);
 
@@ -32,7 +33,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
       >
          {cartItems.length === 0 ? (
             <div className={styles.title}><span>購物車是空的</span></div>
-            
+
          ) : (
             cartItems.map(item => (
                <li key={item.id} className={styles.item}>
@@ -68,9 +69,48 @@ export default function BasketModal({ isOpen, toggleModal }) {
                               </Select>
                            </div>
                         </div>
+                        <br></br>
+                        <div className={styles.row1}>
+                           <div>
+                              冰塊: {"   "}
+                              <Select
+                                 defaultValue={"正常冰"}
+                                 onChange={(ice) => dispatch((ice
+                                 ))}
+                                 options={[
+                                    { value: '少冰', label: '少冰' },
+                                    { value: '微冰', label: '微冰' },
+                                    { value: '正常冰', label: '正常冰' },
+                                    { value: '去冰', label: '去冰' }
+                                 ]}
+                              >
+                              </Select>
+                           </div>
+                        </div>
+                        <br></br>
+                        <div className={styles.row1}>
+                           <div>
+                              甜度: {"   "}
+                              <Select
+                                 defaultValue={"正常"}
+                                 onChange={(sweet) => dispatch((sweet
+                                 ))}
+                                 options={[
+                                    { value: '正常糖', label: '正常糖' },
+                                    { value: '少糖', label: '少糖' },
+                                    { value: '微糖', label: '微糖' },
+                                    { value: '半糖', label: '半糖' },
+                                    { value: '無糖', label: '無糖' }
+                                 ]}
+                              >
+
+                              </Select>
+                           </div>
+                        </div>
+                        <br></br>
                         <div className={styles.row2}>
                            <div className={styles.price}>
-                              <span>價格${item.price * item.qty}元</span> 
+                              <span>價格${item.price * item.qty}元</span>
                            </div>
                            <div className={styles.delete} onClick={() => dispatch(removeCartItems(item.id))}>
                               <span>x</span>
@@ -84,13 +124,13 @@ export default function BasketModal({ isOpen, toggleModal }) {
                   <div className={styles.horizontalLine}></div>
                   <br></br>
                </li>
-               
+
             ))
          )}
          <div className={styles.wrap}>
             <div className={styles.totalPrice}><span>總價${getTotalPrice()}元</span></div>
          </div>
-         
+
          <Button
             className={styles.btn}
             type="primary"

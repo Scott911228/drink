@@ -5,7 +5,7 @@ import { ConfigProvider } from 'antd';
 import { Provider } from "react-redux";
 import { HelmetProvider } from 'react-helmet-async'
 import store from './redux/store';
-import { darkTheme, lightTheme } from './theme';
+import { darkTheme,lightTheme } from './theme';
 import './App.css';
 import Home from './pages/Home';
 import Product from './pages/Product';
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Provider store={store}>
-      <ConfigProvider theme={darkTheme} >
+      <ConfigProvider theme={lightTheme} >
       <HelmetProvider context={{}}>
         <BrowserRouter>
           <Routes>
