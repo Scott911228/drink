@@ -406,7 +406,6 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.4.0"
 
-<<<<<<< HEAD
 "@fortawesome/free-brands-svg-icons@^6.4.0":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.4.0.tgz#c785cf5563231eadc5ef5f8cd0274e0b8920433f"
@@ -414,8 +413,6 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.4.0"
 
-=======
->>>>>>> 6a43e387e5aa1f4b3559be5409d6e8df3df1a905
 "@fortawesome/free-solid-svg-icons@^6.4.0":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.4.0.tgz#48c0e790847fa56299e2f26b82b39663b8ad7119"
@@ -591,6 +588,11 @@
     "@babel/plugin-transform-react-jsx-source" "^7.19.6"
     magic-string "^0.27.0"
     react-refresh "^0.14.0"
+
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
 
 ansi-styles@^3.2.1:
   version "3.2.1"
