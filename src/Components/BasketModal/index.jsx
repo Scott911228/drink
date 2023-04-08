@@ -2,7 +2,6 @@ import { Modal, Button, Select, theme } from "antd";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addCartItems, removeCartItems } from "../../redux/cartSlice";
-
 import styles from "./basketmodal.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
@@ -48,7 +47,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                      <div className={styles.col}>
                         <div className={styles.row1}>
                            <div className={styles.name}>{item.name}</div>
-                           <div>
+                           <div className={styles.qty}>
                               數量: {"   "}
                               <Select
                                  defaultValue={item.qty}
@@ -69,9 +68,9 @@ export default function BasketModal({ isOpen, toggleModal }) {
                               </Select>
                            </div>
                         </div>
-                        <br></br>
+
                         <div className={styles.row1}>
-                           <div>
+                           <div className={styles.ice}>
                               冰塊: {"   "}
                               <Select
                                  defaultValue={"正常冰"}
@@ -87,9 +86,9 @@ export default function BasketModal({ isOpen, toggleModal }) {
                               </Select>
                            </div>
                         </div>
-                        <br></br>
+
                         <div className={styles.row1}>
-                           <div>
+                           <div className={styles.sweet}>
                               甜度: {"   "}
                               <Select
                                  defaultValue={"正常"}
@@ -107,7 +106,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                               </Select>
                            </div>
                         </div>
-                        <br></br>
+
                         <div className={styles.row2}>
                            <div className={styles.price}>
                               <span>價格${item.price * item.qty}元</span>

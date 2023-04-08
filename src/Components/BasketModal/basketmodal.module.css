@@ -1,3 +1,18 @@
+.qty {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ice {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sweet {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .title {
     text-align: center;
     margin-top: 30px;
@@ -8,8 +23,8 @@
 }
 
 .image {
-    width: 120px;
-    height: 170px;
+    width: 180px;
+    height: 270px;
 }
 
 .content {
@@ -24,6 +39,7 @@
 }
 
 .price {
+    font-weight: bold;
     margin-right: 30px;
 }
 
@@ -32,10 +48,11 @@
 }
 
 .delete {
+    font-weight: bolder;
     position: relative;
     height: 25px;
     width: 25px;
-    border: 1px solid white;
+    border: 1.5px solid black;
     border-radius: 100px;
 }
 
@@ -45,7 +62,7 @@
 
 .delete span {
     position: absolute;
-    bottom: -1px; right: 7.5px;
+    bottom: -1px; right: 7px;
     font-size: 20px;
 }
 
@@ -56,6 +73,7 @@
 
 .name {
     font-size: 24px;
+    font-weight: 1000;
     margin-bottom: 10px;
 }
 
@@ -73,10 +91,14 @@
 
 .totalPrice span {
     font-size: 24px;
+    font-weight: bold;
 }
 
 .btn {
+    font-size: 16px;
+    font-weight: bolder;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: 40px;
 }

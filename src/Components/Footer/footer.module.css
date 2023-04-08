@@ -35,7 +35,10 @@
 .imagelist_item {
    margin-left: 30px;
    font-size: 1.5rem;
+}
 
+.imagelist_item:hover {
+   opacity: 0.8;
 }
 
 .contentlist {

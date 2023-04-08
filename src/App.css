@@ -1,6 +1,8 @@
-/* General Styles */
-/* RWD Container */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
 
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+}
 
 .container {
   width:100%;
@@ -44,7 +46,7 @@
 body{
   font-size:large;
   line-height:normal;
-  background-color: #97CBFF;
+  background-color: #a7d2fe;
 }
 
 /* Layout*/

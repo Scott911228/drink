@@ -5,7 +5,7 @@
         "price": "40",
         "pricename": "40元 / 3瓶110 ",
         "image": "/images/drink1.jpg",
-        "description": "來自台灣的高山茶清新且健康，冷泡而成，順口、回甘",
+        "description": "來自台灣的高山茶冷泡而成，順口、回甘。",
         "description_long": "",
         "currency": "TWD",
         "countInStock" :10
@@ -16,7 +16,7 @@
         "price": "55",
         "pricename": "大杯55元 / 中杯50",
         "image": "/images/drink2.jpg",
-        "description": "口感滑順且奶香濃郁，鮮奶茶使其適中的甜度喝起來非常舒服",
+        "description": "鮮奶與茶的完美比例，珍珠Q彈有嚼勁，入口甜而不膩。",
         "description_long": "",
         "currency": "TWD",
         "countInStock" :10
@@ -27,7 +27,7 @@
         "price": "50",
         "pricename": "杯裝50元 / 個性瓶裝60",
         "image": "/images/drink3.jpg",
-        "description": "繽紛的紫藍粉顏色使飲料鮮豔且時尚，且蝶豆花的花姿優雅高貴，相當美麗",
+        "description": "繽紛的顏色使飲料鮮豔且時尚，口感淡雅清爽。",
         "description_long": "",
         "currency": "TWD",
         "countInStock" :10
@@ -38,7 +38,7 @@
         "price": "60",
         "pricename": "大杯60 / 中杯55",
         "image": "/images/drink4.jpg",
-        "description": "清涼的仙草不但解渴，其彈牙口感非常有嚼勁，濃郁的奶香和黑糖讓人很滿足",
+        "description": "順滑的仙草搭配濃郁的鮮奶，是你解暑的好選擇。",
         "description_long": "",
         "currency": "TWD",
         "countInStock" :10
@@ -49,7 +49,7 @@
         "price": "50",
         "pricename": "50",
         "image": "/images/drink5.jpg",
-        "description": "溫暖且健康，薑素、紅棗、枸杞對身體有很好的滋補作用，且其薑汁會散發出濃郁的香味",
+        "description": "薑素、紅棗、枸杞對身體有很好的滋補作用，是冬季養生聖品。",
         "description_long": "",
         "currency": "TWD",
         "countInStock" :10
@@ -60,7 +60,7 @@
         "price": "45",
         "pricename": "45元 / 特價3瓶120",
         "image": "/images/drink6.jpg",
-        "description": "使用純天然的黑木耳，不含添加劑和化學物質，對身體非常有益，另外添加了紅棗；枸杞、桂圓等使其口感更加豐富",
+        "description": "使用純天然的黑木耳、紅棗、枸杞、桂圓磨製而成，口感豐富。不含添加劑和化學物質，健康無負擔。",
         "description_long": "",
         "currency": "TWD",
         "countInStock" :10
@@ -71,7 +71,7 @@
         "price": "50",
         "pricename": "50",
         "image": "/images/drink7.jpg",
-        "description": "楊桃富有各種營養素，三種不同的產品使用了不同健康食材使其更加健康，相比其他果汁類飲料更具獨特的風味",
+        "description": "楊桃富有各種營養素與生津止渴的功效，相比其他果汁更具獨特的風味。",
         "description_long": "",
         "currency": "TWD",
         "countInStock" :10
@@ -82,7 +82,7 @@
         "price": "50",
         "pricename": "50",
         "image": "/images/drink8.jpg",
-        "description": "蓮子湯具有安神止渴的作用，能夠使人身心放鬆、消除疲勞、改善睡眠品質，蓮子Q彈有嚼勁且湯品的口感醇厚，非常適合冬天飲用",
+        "description": "蓮子湯具有安神止渴的作用，能夠使人身心放鬆、消除疲勞、改善睡眠品質，是老少咸宜的健康飲品。",
         "description_long": "",
         "currency": "TWD",
         "countInStock" :10
@@ -93,7 +93,7 @@
         "price": "50",
         "pricename": "大杯50 / 中杯45",
         "image": "/images/drink9.jpg",
-        "description": "香蕉及牛奶有助於腸胃的消化，其混和在一起香濃十足且滑順，香蕉豐富的蛋白質與鈣質能提供身體所需的營養",
+        "description": "香蕉及牛奶混和在一起香濃十足且口感滑順，是孩子們的最愛。",
         "description_long": "",
         "currency": "TWD",
         "countInStock" :10
