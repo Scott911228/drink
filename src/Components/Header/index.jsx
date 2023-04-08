@@ -6,7 +6,9 @@ import CartSummary from "../CartSummary";
 export default function Header({ title, nav }) {
     return (
         <div className={styles.header}>
-
+            <div className={styles.imagelist_item}>
+                 <a href="#"><image src="./images/logo.jpg" width="200" height="150" /></a>
+            </div>
             <Link to="/" style={{ textDecoration: "none", fontSize:"36px" }}>
                 <span className="animate__animated animate__fadeInUp animate__delay-0.5s">
                     {title}

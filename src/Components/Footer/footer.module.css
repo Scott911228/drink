@@ -12,14 +12,13 @@
 }
 
 .hrFooterLine {
-    margin: 25px auto 30px;
-    padding: 0;
-    width: 100%;
-    border: 0;
-    border-top: solid 2px;
-    border-color: #525256;
-    opacity: 1;
-    border-radius: 0.2rem;
+   margin: 25px auto 30px;
+   padding: 0;
+   width: 100%;
+   border: 0;
+   border-top: solid 3px;
+   border-color: #2c2b2b;
+   opacity: 1;
  }
  
  .content {
@@ -49,6 +48,7 @@
 .contentlist_item {
    margin-left: 50px;
    font-size: 1.2rem;
+   font-weight:bold;
 
 }
 

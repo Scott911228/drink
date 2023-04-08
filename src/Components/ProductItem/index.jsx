@@ -12,6 +12,7 @@ export default function ProductItem({ product }) {
                src={product.image}
                alt={product.name} />
          </Link>
+         <br></br> <br></br>
          <div className={styles.info}>
             <h1 className={styles.name}>
                {product.name}

@@ -7,8 +7,14 @@
     padding-bottom: 0;
 }
 
+.name{
+    font-size: 30px;
+    font-weight:bold;
+}
+
 .description {
     font-size: 20px;
+    font-weight:bold;
 }
 
 .wrap {
@@ -19,15 +25,31 @@
 .pricename {
     font-size: 1.5rem;
     margin-right: 50px;
+    font-weight:bold;
 }
 
 .status {
     font-size: 1.2rem;
+    font-weight:bold;
+}
+
+.qty{
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+.ice{
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+.sweet{
+    font-size: 1.2rem;
+    font-weight:bold;
 }
 
 .totalprice {
     margin: 0;
     font-size: 1.5rem;
+    font-weight:bold;
 }
 
 .col1 {

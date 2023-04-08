@@ -4,12 +4,15 @@
     100%{transform: translateX(0px);}
 }
 
-.item {
-    color: white;
+
+.name{
+    font-size: 30px;
+    font-weight:bold;
 }
 
 .more {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight:bold;
 }
 
 .image:hover {
@@ -17,4 +20,11 @@
     animation: swing 0.3s 1;
     box-shadow: 5px 5px 3px 3px gray;
     transition-duration: 0.2s;
+}
+
+.link{
+    font-size: 20px;
+    color:#2c2b2b;
+    font-weight:bold;
+    
 }

@@ -2,25 +2,33 @@
 * {
     text-decoration: none;
     list-style: none;
-    color: white;
     box-sizing: border-box;
+    color:#2c2b2b;
 }
 
 .header {
     text-align: center;
+    font-weight:bold;
 }
 
 .headerTitle {
     font-size: 2.4rem;
+    font-weight:bold;
+    color:#2c2b2b;
 }
 
 .headernav{
     font-size: 1.6rem;
 }
 
+.imagelist_item {
+    margin-left: 30px;
+    font-size: 1.5rem;
+ 
+ }
+
 .nav {
     margin-top: 40px;
-    color: white;
     opacity: 0.8;
     line-height: 0.8;
 }
@@ -69,6 +77,6 @@
     width: 100%;
     border: 0;
     border-top: solid 3px;
-    border-color: #525256;
+    border-color:#2c2b2b;
     opacity: 1;
 }
