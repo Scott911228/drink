@@ -1,3 +1,8 @@
+@keyframes swing {
+    15%{transform: translateX(5px);}
+    55%{transform: translateX(-5px);}
+    100%{transform: translateX(0px);}
+}
 
 .item {
     color: white;
@@ -5,4 +10,11 @@
 
 .more {
     font-size: 16px;
+}
+
+.image:hover {
+    border-radius: 5px;
+    animation: swing 0.3s 1;
+    box-shadow: 5px 5px 3px 3px gray;
+    transition-duration: 0.2s;
 }

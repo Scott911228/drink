@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import 'animate.css';
+import { Link } from "react-router-dom";
 import styles from "./header.module.css";
 import CartSummary from "../CartSummary";
 
@@ -6,8 +7,8 @@ export default function Header({ title, nav }) {
     return (
         <div className={styles.header}>
 
-            <Link to="/" style={{ textDecoration: "none" }}>
-                <span className={styles.headerTitle}>
+            <Link to="/" style={{ textDecoration: "none", fontSize:"36px" }}>
+                <span className="animate__animated animate__fadeInUp animate__delay-0.5s">
                     {title}
                 </span>
             </Link>

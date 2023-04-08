@@ -7,6 +7,7 @@ export default function ProductItem({ product }) {
       <div className={styles.item}>
          <Link to={`/products/id/${product.id}`}>
             <img
+               className={styles.image}
                style={{ width: '80%', height: "380px"}}
                src={product.image}
                alt={product.name} />

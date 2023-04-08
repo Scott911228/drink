@@ -1,3 +1,4 @@
+
 * {
     text-decoration: none;
     list-style: none;
@@ -26,6 +27,15 @@
 
 .nav div {
     margin-left: 100px;
+}
+
+.nav a {
+    transition: margin 0.4s;
+}
+
+.nav a:hover {
+    margin-left: 15px;
+    font-size: 1.8rem;
 }
 
 .nav div:hover {
