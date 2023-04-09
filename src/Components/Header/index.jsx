@@ -2,6 +2,7 @@ import 'animate.css';
 import { Link } from "react-router-dom";
 import styles from "./header.module.css";
 import CartSummary from "../CartSummary";
+import logo from '../../assets/logo.png';
 
 export default function Header({ title, nav }) {
     return (
@@ -9,10 +10,8 @@ export default function Header({ title, nav }) {
             <div className={styles.imagelist_item}>
                 <a href="#"><image src="./images/logo.jpg" width="200" height="150" /></a>
             </div>
-            <Link to="/" style={{ textDecoration: "none", fontSize: "36px" }}>
-                <span className="animate__animated animate__fadeInUp animate__delay-0.5s">
-                    {title}
-                </span>
+            <Link to="/" style={{ textDecoration: "none"}}>
+                <img className="animate__animated animate__fadeInUp animate__delay-0.5s" src={logo} alt="title" width="120px" />
             </Link>
             <br></br> <br></br>
             <span className={styles.headernav}>
