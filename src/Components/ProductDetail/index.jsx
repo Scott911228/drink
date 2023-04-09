@@ -62,7 +62,8 @@ export default function ProductDetail({ product }) {
                             <Select
                                 defaultValue={qty}
                                 key={qty}
-                                className="amount"
+                                className={styles.amount}
+                                // popupClassName={styles.amountvalue}
                                 onChange={val => setQty(val)}
                             >
                                 {[...Array(product.countInStock).keys()].map((x) => (

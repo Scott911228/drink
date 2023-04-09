@@ -82,7 +82,7 @@
     opacity: 1;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 372px) {
     .headerTitle {
       font-size: 1.8rem;
     }
@@ -91,6 +91,10 @@
         font-size: 2.0rem;
     }
 
+    .navlist{
+        margin-left: 50px;
+        width:80%;
+    }
     .navlist_item{
         font-size: 1.8rem;
     }

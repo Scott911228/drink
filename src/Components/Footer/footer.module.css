@@ -78,9 +78,9 @@
    margin-top: 8px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 372px) {
    .imagelist_item {
-      width: 50px;
+      width: 60px;
    }
 
    .imagelist_item {

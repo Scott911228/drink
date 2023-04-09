@@ -11,7 +11,7 @@
     font-weight: 1000;
  }
 
- @media (max-width: 360px) {
+ @media (max-width: 372px) {
    .btn{
       font-size:1.8rem;
    }

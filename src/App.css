@@ -2,6 +2,7 @@
 
 * {
   font-family: 'Noto Sans TC', sans-serif;
+  font-size:inherit;
 }
 
 .container {
@@ -11,7 +12,7 @@
   margin:auto;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 372px) {
   .container {
     width: 320px;
   }

@@ -16,6 +16,7 @@
 .title {
     text-align: center;
     margin-top: 30px;
+    font-weight:bold;
 }
 
 .title span {
@@ -98,7 +99,7 @@
     height: 40px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 372px) {
     .qty {
         font-size: 30px;
     }
