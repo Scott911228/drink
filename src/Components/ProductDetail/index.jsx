@@ -74,7 +74,7 @@ export default function ProductDetail({ product }) {
                                 style={{ width: 100 }}
                                 onChange={ice}
                                 options={[
-                                    { value: '少冰', label: '少冰', color: '#000000' },
+                                    { value: '少冰', label: '少冰' },
                                     { value: '微冰', label: '微冰' },
                                     { value: '正常冰', label: '正常冰' },
                                     { value: '去冰', label: '去冰' }
@@ -90,7 +90,7 @@ export default function ProductDetail({ product }) {
                                     defaultValue={"正常糖"}
                                     style={{ width: 100 }}
                                     onChange={sweet}
-                                    options={[
+                                    options={[                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
                                         { value: '正常糖', label: '正常糖' },
                                         { value: '少糖', label: '少糖' },
                                         { value: '微糖', label: '微糖' },

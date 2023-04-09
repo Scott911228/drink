@@ -28,3 +28,26 @@
     font-weight:bold;
     
 }
+
+@media (max-width: 360px) {
+    .info{
+        padding-left: 10px;
+    }
+
+    .name{
+        font-size:45px;
+        
+    }
+
+    .more {
+        font-size:40px;
+    }
+
+    .link{
+        font-size:30px;
+    }
+
+    .image{
+        padding-left: 10px;
+    }
+  }

@@ -15,11 +15,11 @@ export default function CartSummary() {
     ? cartItems.reduce((sum, item) => sum + item.qty, 0)
     : 0;
   const toggleOpen = () => setIsOpen(!isOpen);
-
+  
   return (
     <>
       <nav onClick={toggleOpen} className={styles.cartSummary} >
-        <Badge count={count} color="#53FF53" style={{ color: 'white' }}>
+        <Badge count={count} color="#53FF53"  style={{ color: 'white' }}>
           <FontAwesomeIcon icon={faCartShopping} className="carticon" size="2xl" />
         </Badge>
       </nav>

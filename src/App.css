@@ -11,9 +11,9 @@
   margin:auto;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 360px) {
   .container {
-    width: 540px;
+    width: 320px;
   }
 } 
 
@@ -46,7 +46,7 @@
 body{
   font-size:large;
   line-height:normal;
-  background-color: #a7d2fe;
+  background-color: #dcfffb;
 }
 
 /* Layout*/

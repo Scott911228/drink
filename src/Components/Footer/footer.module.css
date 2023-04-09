@@ -2,11 +2,11 @@
    display: grid;
    padding-right: 1rem;
    padding-left: 1rem;
-   grid-template-areas: 
-    'follow'
-    'content'
-    'contactUs'
-  ;
+   grid-template-areas:
+      'follow'
+      'content'
+      'contactUs'
+   ;
    grid-template-rows: auto 1rem;
    gap: 1em,
 }
@@ -19,11 +19,11 @@
    border-top: solid 3px;
    border-color: #2c2b2b;
    opacity: 1;
- }
- 
- .content {
-    grid-area: content;
- }
+}
+
+.content {
+   grid-area: content;
+}
 
 .imagelist {
    display: flex;
@@ -51,7 +51,7 @@
 .contentlist_item {
    margin-left: 50px;
    font-size: 1.2rem;
-   font-weight:bold;
+   font-weight: bold;
 
 }
 
@@ -61,4 +61,16 @@
 
 .follow {
    grid-area: follow;
+}
+
+@media (max-width: 360px) {
+   .imagelist_item {
+      width: 50px;
+   }
+
+   .icon {}
+
+   .contentlist_item{
+      font-size:1.8rem;
+   }
 }

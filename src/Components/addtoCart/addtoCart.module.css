@@ -11,4 +11,12 @@
     font-weight: 1000;
  }
 
- 
+ @media (max-width: 360px) {
+   .btn{
+      font-size:1.8rem;
+   }
+
+   .btn span {
+      font-size: 1.8rem;
+   }
+ }

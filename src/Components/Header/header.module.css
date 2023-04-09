@@ -80,3 +80,17 @@
     border-color:#2c2b2b;
     opacity: 1;
 }
+
+@media (max-width: 360px) {
+    .headerTitle {
+      font-size: 1.8rem;
+    }
+    
+    .headernav{
+        font-size: 2.0rem;
+    }
+
+    .navlist_item{
+        font-size: 1.8rem;
+    }
+  }
