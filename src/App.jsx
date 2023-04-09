@@ -7,6 +7,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import store from './redux/store';
 import { darkTheme,lightTheme } from './theme';
 import './App.css';
+import About from './pages/About';
 import Home from './pages/Home';
 import Product from './pages/Product';
 
@@ -20,6 +21,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path='about' element={<About />} />
             <Route path="products">
               <Route path="category/:categoryName" element={<Home />} />
               <Route path="id/:productId" element={<Product />} />

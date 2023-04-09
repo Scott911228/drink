@@ -2,17 +2,20 @@ import { Modal, Button, Select, theme } from "antd";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addCartItems, removeCartItems } from "../../redux/cartSlice";
+import { addiceItems, removeiceItems } from "../../redux/iceSlice";
 import styles from "./basketmodal.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 
 import { selectCartItems } from "../../redux/cartSlice";
+import { selecticeItems } from "../../redux/iceSlice";
 const { Option } = Select;
 
 export default function BasketModal({ isOpen, toggleModal }) {
    const { token: { colorTextBase } } = theme.useToken();
    const dispatch = useDispatch();
    const cartItems = useSelector(selectCartItems);
+   const iceItems = useSelector(selecticeItems);
 
    const handleCancel = () => toggleModal(!isOpen);
    const getTotalPrice = () => {
@@ -73,8 +76,8 @@ export default function BasketModal({ isOpen, toggleModal }) {
                            <div className={styles.ice}>
                               冰塊: {"   "}
                               <Select
-                                 defaultValue={"正常冰"}
-                                 onChange={(ice) => dispatch((ice
+                                 defaultValue={item.ice}
+                                 onChange={(ice) => dispatch(addiceItems(ice
                                  ))}
                                  options={[
                                     { value: '少冰', label: '少冰' },

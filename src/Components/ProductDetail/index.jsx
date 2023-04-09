@@ -2,10 +2,15 @@ import { Row, Col, Select } from "antd";
 import AddToCart from "../addtoCart";
 import { useState } from 'react';
 import styles from "./productdetail.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { addiceItems, removeiceItems } from "../../redux/iceSlice";
+import { selecticeItems } from "../../redux/iceSlice";
 const { Option } = Select;
 
 export default function ProductDetail({ product }) {
     const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
+    const iceItems = useSelector(selecticeItems);
+    const dispatch = useDispatch();
     const ice = (value) => {
         console.log('selected $[value]');
     };
@@ -72,7 +77,8 @@ export default function ProductDetail({ product }) {
                             <Select
                                 defaultValue={"正常冰"}
                                 style={{ width: 100 }}
-                                onChange={ice}
+                                onChange={(ice) => dispatch(addiceItems(ice
+                                    ))}
                                 options={[
                                     { value: '少冰', label: '少冰' },
                                     { value: '微冰', label: '微冰' },
