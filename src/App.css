@@ -64,18 +64,17 @@ body{
 .layoutHeader {
   grid-area: header;
   height: auto;
-  line-height: 1.6;
 }
 
 .layoutFooter {
   grid-area: footer;
   padding: 0;
   height: auto;
-  line-height: 1.6;
 }
 
 .layoutContent {
   grid-area: content;
+  height: auto;
 }
 
 

@@ -19,7 +19,7 @@ export default function CartSummary() {
   return (
     <>
       <nav onClick={toggleOpen} className={styles.cartSummary} >
-        <Badge count={count} color="#53FF53"  style={{ color: 'white' }}>
+        <Badge count={count} color="yellow"  style={{ fontWeight:'bold' , fontSize:'0.8rem' }}>
           <FontAwesomeIcon icon={faCartShopping} className="carticon" size="2xl" />
         </Badge>
       </nav>

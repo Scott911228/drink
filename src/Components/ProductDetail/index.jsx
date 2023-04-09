@@ -56,7 +56,7 @@ export default function ProductDetail({ product }) {
                             <Select
                                 defaultValue={qty}
                                 key={qty}
-                                className={styles.amount}
+                                className="amount"
                                 onChange={val => setQty(val)}
                             >
                                 {[...Array(product.countInStock).keys()].map((x) => (

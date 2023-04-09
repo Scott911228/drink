@@ -29,24 +29,41 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className={styles.content}>
-                    <ul className={styles.contentlist}>
-                        <li className={styles.contentlist_item}>
+                    <div className={styles.contentlist}>
+                        <div className={styles.contentlist_item}>
                             <p style={{ fontweight: 800 }}>關於我們</p>
-                        </li>
+                        </div>
                         
-                        <li className={styles.contentlist_item}>
+                        <div className={styles.contentlist_item}>
                             <p style={{ fontweight: 800 }}>品牌故事</p>
-                        </li>
+                        </div>
 
-                        <li className={styles.contentlist_item}>
+                        <div className={styles.contentlist_item}>
                             <p style={{ fontweight: 800 }}>菜單介紹</p>
-                        </li>
+                        </div>
 
-                        <li className={styles.contentlist_item}>
+                        <div className={styles.contentlist_item}>
                             <p style={{ fontweight: 800 }}>位置資訊</p>
-                        </li>
+                        </div>
 
-                    </ul>
+                    </div>
+                </div>
+
+                <div className={styles.contact}>
+                    <div className={styles.contentlist}>
+                        <div className={styles.contentlist_item}>
+                            <p>電話訂購 : (02)-86666666</p>
+                        </div>
+                        
+                        <div className={styles.contentlist_item}>
+                            <p>e-mail : rick3862100@gmail.com</p>
+                        </div>
+
+                        <div className={styles.contentlist_item}>
+                            <p>地址 : 桃園市中壢區龍川二街134號</p>
+                        </div>
+
+                    </div>
                 </div>
 
             </footer>

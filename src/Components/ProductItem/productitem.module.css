@@ -4,6 +4,7 @@
     100%{transform: translateX(0px);}
 }
 
+.item
 
 .name{
     font-size: 30px;
@@ -15,6 +16,11 @@
     font-weight:bold;
 }
 
+.textGray {
+    font-size: 24px;
+    margin-right: 120px;
+}
+
 .image:hover {
     border-radius: 5px;
     animation: swing 0.3s 1;
@@ -24,7 +30,7 @@
 
 .link{
     font-size: 20px;
-    color:#2c2b2b;
+    color:#5e5d5d;
     font-weight:bold;
     
 }

@@ -7,6 +7,7 @@
 }
 
 .header {
+    background-image: linear-gradient(to bottom, #9acaee8a, #dcfffb);
     text-align: center;
     font-weight:bold;
 }
@@ -92,5 +93,9 @@
 
     .navlist_item{
         font-size: 1.8rem;
+    }
+
+    .nav div {
+        margin-left: 30px;
     }
   }

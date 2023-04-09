@@ -1,14 +1,16 @@
+.foot {
+   height: 100%;
+   background-image: linear-gradient(to top, #9acaee8a, #dcfffb);
+} 
+
 .footer {
    display: grid;
-   padding-right: 1rem;
-   padding-left: 1rem;
    grid-template-areas:
       'follow'
       'content'
       'contactUs'
    ;
-   grid-template-rows: auto 1rem;
-   gap: 1em,
+   grid-template-rows: auto 1fr;
 }
 
 .hrFooterLine {
@@ -33,7 +35,8 @@
 }
 
 .imagelist_item {
-   margin-left: 30px;
+   margin-left: 20px;
+   margin-right: 20px;
    font-size: 1.5rem;
 }
 
@@ -49,7 +52,8 @@
 }
 
 .contentlist_item {
-   margin-left: 50px;
+   margin-left: 25px;
+   margin-right: 25px;
    font-size: 1.2rem;
    font-weight: bold;
 
@@ -63,14 +67,31 @@
    grid-area: follow;
 }
 
+.contact {
+   background-color: rgba(0, 0, 0, 0.716)
+}
+
+.contact p {
+   color: rgb(185, 184, 184);
+   font-weight: lighter;
+   font-size: 14px;
+   margin-top: 8px;
+}
+
 @media (max-width: 360px) {
    .imagelist_item {
       width: 50px;
    }
 
-   .icon {}
+   .imagelist_item {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size:1.5rem;
+   }
 
    .contentlist_item{
-      font-size:1.8rem;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size:1.5rem;
    }
 }
