@@ -8,8 +8,15 @@
 }
 
 .name{
+    margin-bottom: 10px;
     font-size: 30px;
     font-weight:bold;
+}
+
+.horizontal_line {
+    width: 50%;
+    margin-bottom: 10px;
+    border: 1px solid gray;
 }
 
 .description {
@@ -63,9 +70,6 @@
     justify-content: space-between;
 }
 
-.amount .ant-select-selector {
-  border-color: red; /* 设置边框颜色为红色 */
-}
 @media (max-width: 360px) {
         .image{
             width:50%;

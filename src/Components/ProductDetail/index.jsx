@@ -43,6 +43,7 @@ export default function ProductDetail({ product }) {
                     <h1 className={styles.name} >
                         {product.name}
                     </h1>
+                    <div className={styles.horizontal_line}></div>
                     <p className={styles.description}>
                         {product.description}
                     </p>

@@ -1,8 +1,7 @@
-import { useParams } from 'react-router-dom';
-import { theme } from 'antd';
-import { Helmet } from "react-helmet-async"
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
+import Content from "../Components/Content";
+import imageList from "../json/imageList.json"
 
 function about() {
     return (
@@ -10,11 +9,9 @@ function about() {
             <Header
                 className="layoutHeader"
                 title="飲料商品賣場"
-                nav="最健康又養生的飲料都在這裡"
+                nav=""
             />
-            <div  className="layoutContent" >
-
-            </div>
+            <Content className="layoutContent" />
             <Footer className="layoutFooter" />
         </div>
     );
