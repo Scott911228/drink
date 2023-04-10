@@ -7,10 +7,10 @@
     padding-bottom: 0;
 }
 
-.name{
+.name {
     margin-bottom: 10px;
     font-size: 30px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .horizontal_line {
@@ -21,7 +21,7 @@
 
 .description {
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .wrap {
@@ -32,31 +32,33 @@
 .pricename {
     font-size: 1.5rem;
     margin-right: 50px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .status {
     font-size: 1.2rem;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-.qty{
+.qty {
     font-size: 1.2rem;
-    font-weight:bold;
+    font-weight: bold;
 }
-.ice{
+
+.ice {
     font-size: 1.2rem;
-    font-weight:bold;
+    font-weight: bold;
 }
-.sweet{
+
+.sweet {
     font-size: 1.2rem;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .totalprice {
     margin: 0;
     font-size: 1.5rem;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .col1 {
@@ -70,40 +72,52 @@
     justify-content: space-between;
 }
 
-@media (max-width: 360px) {
-        .image{
-            width:50%;
-        }
-
-        .name{
-            font-size: 40px; 
-        }
-
-        .description {
-            font-size: 30px;
-            font-weight:bold;
-        }
-
-        .pricename {
-            font-size: 2rem;
-        }
-
-        .status {
-            font-size: 1.5rem;
-        }
+@media (max-width: 372px) {
+    .image {
+        width: 50%;
         
-        .qty{
-            font-size: 1.8rem;
-        }
-        .ice{
-            font-size: 1.8rem;
-        }
-        .sweet{
-            font-size: 1.8rem;
+    }
 
-        }
-        
-        .totalprice {
-            font-size: 2.0rem;
-        }
-  }
+    .name {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .pricename {
+        font-size: 2rem;
+    }
+
+    .status {
+        font-size: 1.5rem;
+    }
+
+    .qty {
+        font-size: 1.8rem;
+    }
+
+    .amount {
+        font-size: 2.2rem;
+        ;
+    }
+
+    /* .amountvalue {
+        font-size: inherit;
+    } */
+
+    .ice {
+        font-size: 1.8rem;
+    }
+
+    .sweet {
+        font-size: 1.8rem;
+
+    }
+
+    .totalprice {
+        font-size: 2.0rem;
+    }
+}

@@ -1,3 +1,4 @@
+import 'animate.css';
 import styles from "./content.module.css"
 import shop from '../../../src/assets/shop.jpg';
 import tea from '../../../src/assets/tea.jpg'
@@ -7,6 +8,7 @@ export default function Content() {
         <div className={styles.container}>
 
             <div className={styles.aboutUs}>
+
                 <img className={styles.shop} src={shop} alt="shop" />
                 <div className={styles.desc}>
                     <div className={styles.aboutTit}>

@@ -10,7 +10,7 @@ export default function Header({ title, nav }) {
             <div className={styles.imagelist_item}>
                 <a href="#"><image src="./images/logo.jpg" width="200" height="150" /></a>
             </div>
-            <Link to="/" style={{ textDecoration: "none"}}>
+            <Link to="/" style={{ textDecoration: "none" }}>
                 <img className="animate__animated animate__fadeInUp animate__delay-0.5s" src={logo} alt="title" width="120px" />
             </Link>
             <br></br> <br></br>
@@ -27,7 +27,9 @@ export default function Header({ title, nav }) {
                     </li>
 
                     <li className={styles.navlist_item}>
-                        <a href="#">產品</a>
+                        <Link to={'/'}>
+                            產品
+                        </Link>
                     </li>
 
                     <li className={styles.navlist_item}>

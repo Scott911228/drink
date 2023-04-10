@@ -28,7 +28,6 @@ export default function BasketModal({ isOpen, toggleModal }) {
       <Modal
          title=""
          style={{ width: '50%' }}
-
          open={isOpen}
          onCancel={handleCancel}
          footer={null}

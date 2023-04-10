@@ -1,19 +1,29 @@
 @keyframes swing {
-    15%{transform: translateX(5px);}
-    55%{transform: translateX(-5px);}
-    100%{transform: translateX(0px);}
+    15% {
+        transform: translateX(5px);
+    }
+
+    55% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
 
-.item
+.item{
+    width:100%;
+}
 
-.name{
+.name {
     font-size: 30px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .more {
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .textGray {
@@ -28,32 +38,39 @@
     transition-duration: 0.2s;
 }
 
-.link{
+.link {
     font-size: 20px;
-    color:#5e5d5d;
-    font-weight:bold;
-    
+    color: #5e5d5d;
+    font-weight: bold;
+
 }
 
-@media (max-width: 360px) {
-    .info{
+@media (max-width: 372px) {
+    .info {
         padding-left: 10px;
     }
 
-    .name{
-        font-size:45px;
-        
+    .name {
+        font-size: 40px;
+
+    }
+
+    .item {
+        width: 100%;
     }
 
     .more {
-        font-size:40px;
+        font-size: 30px;
     }
 
-    .link{
-        font-size:30px;
+    .link {
+        margin-left: -40px;
+        font-size: 25px;
     }
 
-    .image{
+
+    .image {
         padding-left: 10px;
+        width: 100%;
     }
-  }
+}

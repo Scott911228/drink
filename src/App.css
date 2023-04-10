@@ -10,7 +10,7 @@
   margin:auto;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 372px) {
   .container {
     width: 320px;
   }
