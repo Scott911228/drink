@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div className={styles.foot}>
             <hr className={styles.hrFooterLine} />
-            <footer className={styles.footer} id='footer'>
+            <footer className={styles.footer}>
                 <div className={styles.follow}>
                     {/* <p style={{ fontWeight: 800 }}>跟隨我們</p> */}
 

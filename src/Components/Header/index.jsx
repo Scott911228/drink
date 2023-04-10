@@ -25,7 +25,7 @@ export default function Header({ title, nav }) {
 
                     <li className={styles.navlist_item}>
                         <Link to={'/'}>
-                            產品
+                            商品
                         </Link>
                     </li>
 

@@ -75,8 +75,8 @@ export default function BasketModal({ isOpen, toggleModal }) {
                            <div className={styles.ice}>
                               冰塊: {"   "}
                               <Select
-                                 defaultValue={item.ice}
-                                 onChange={(ice) => dispatch((ice
+                                 defaultValue={"正常冰"}
+                                 onChange={(ice) => dispatch(addiceItems(ice
                                  ))}
                                  options={[
                                     { value: '少冰', label: '少冰' },
@@ -85,6 +85,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                                     { value: '去冰', label: '去冰' }
                                  ]}
                               >
+                                 
                               </Select>
                            </div>
                         </div>
@@ -97,7 +98,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                                  onChange={(sweet) => dispatch((sweet
                                  ))}
                                  options={[
-                                    { value: '正常糖', label: '正常糖' },
+                                    { value: '正常', label: '正常' },
                                     { value: '少糖', label: '少糖' },
                                     { value: '微糖', label: '微糖' },
                                     { value: '半糖', label: '半糖' },
