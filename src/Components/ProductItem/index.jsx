@@ -23,7 +23,7 @@ export default function ProductItem({ product }) {
                   {product.price}元 &nbsp;
                </span>
                <Link to={`/products/id/${product.id}`} className={styles.link}>
-                  查看更多...
+                  前往購買...
                </Link>
             </div>
          </div>
