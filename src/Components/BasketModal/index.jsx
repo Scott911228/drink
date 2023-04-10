@@ -76,7 +76,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                               冰塊: {"   "}
                               <Select
                                  defaultValue={item.ice}
-                                 onChange={(ice) => dispatch(addiceItems(ice
+                                 onChange={(ice) => dispatch((ice
                                  ))}
                                  options={[
                                     { value: '少冰', label: '少冰' },
