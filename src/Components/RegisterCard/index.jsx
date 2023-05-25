@@ -56,12 +56,12 @@ const RegisterCard = () => {
      >
        <Form.Item
          name="name"
-         label="Your Name"
-         tooltip="What do you want others to call you?"
+         label="帳號名稱"
+         tooltip="希望別人怎麼稱呼你?"
          rules={[
            {
              required: true,
-             message: "Please input your name!",
+             message: "請輸入帳號!",
              whitespace: true,
            },
          ]}
@@ -74,11 +74,11 @@ const RegisterCard = () => {
          rules={[
            {
              type: "email",
-             message: "The input is not valid E-mail!",
+             message: "您輸入的email不存在",
            },
            {
              required: true,
-             message: "Please input your E-mail!",
+             message: "請輸入email!",
            },
          ]}
        >
@@ -86,12 +86,12 @@ const RegisterCard = () => {
        </Form.Item>
 
        <Form.Item
-         name="password"
+         name="密碼"
          label="Password"
          rules={[
            {
              required: true,
-             message: "Please input your password!",
+             message: "請輸入密碼!",
            },
          ]}
          hasFeedback
@@ -100,14 +100,14 @@ const RegisterCard = () => {
        </Form.Item>
 
        <Form.Item
-         name="rePassword"
+         name="重複輸入密碼"
          label="Re-enter Password"
          dependencies={["password"]}
          hasFeedback
          rules={[
            {
              required: true,
-             message: "Please re-enter your password!",
+             message: "請重複輸入密碼",
            },
            ({ getFieldValue }) => ({
              validator(_, value) {
@@ -116,7 +116,7 @@ const RegisterCard = () => {
                }
 
                return Promise.reject(
-                 new Error("The two passwords that you entered do not match!")
+                 new Error("重複輸入的密碼錯誤")
                );
              },
            }),
@@ -133,13 +133,13 @@ const RegisterCard = () => {
              validator: (_, value) =>
                value
                  ? Promise.resolve()
-                 : Promise.reject(new Error("Should accept agreement")),
+                 : Promise.reject(new Error("應同意隱私政策")),
            },
          ]}
          {...tailFormItemLayout}
        >
          <Checkbox>
-           I have read the <Link to="">agreement</Link>
+           我同意 <Link to="">隱私政策</Link>
          </Checkbox>
        </Form.Item>
        <Form.Item {...tailFormItemLayout}>
@@ -148,10 +148,10 @@ const RegisterCard = () => {
            className="login-form__button"
            htmlType="submit"
          >
-           Create your account
+           創建你的帳號
          </Button>
-         Already have an account?{" "}
-         <Link to={"/login?redirect=shipping"}>Login</Link>
+          已經有帳號了?{" "}
+         <Link to={"/logIn-page"}>前往登入</Link>
        </Form.Item>
      </Form>
    );

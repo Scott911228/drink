@@ -9,24 +9,24 @@ const supabase = createClient('https://zekspmqanzmaqnuzqtlt.supabase.co', 'eyJhb
 
 const LoginCard = () => {
   const [form] = Form.useForm();
-  
+
 
   const onFinishFailed = (errorInfo) => {
     console.log('Failed: ', errorInfo.errorFields[0].errors[0])
   };
-  
+
   const onFinish = (values) => {
-    const {email , password} = form.getFieldsValue();
-    const { data, error } =  supabase.auth.signUp({
+    const { email, password } = form.getFieldsValue();
+    const { data, error } = supabase.auth.signUp({
       email: email,
       password: password,
     })
 
-    if(error){
+    if (error) {
       console.log('fff');
     }
 
-    if(data){
+    if (data) {
 
 
     }
@@ -44,7 +44,7 @@ const LoginCard = () => {
         remember: true,
       }}
       onFinish={onFinish}
-      
+
     >
       <Form.Item
         name="email"
@@ -83,19 +83,28 @@ const LoginCard = () => {
       </Form.Item>
       <Form.Item>
         <Form.Item name="remember" valuePropName="checked" noStyle>
-          <Checkbox>Remember me</Checkbox>
+          <Checkbox>記住密碼</Checkbox>
         </Form.Item>
 
         <Link className="login-form__forgot" to={"/"}>
-          Forgot password
+          忘記密碼
         </Link>
       </Form.Item>
 
       <Form.Item>
+      <Link to={"/shipping-page"}>
         <Button type="primary" htmlType="submit" className="login-form__button">
-          Log in
+          登入
         </Button>
-        Or <Link to={"/register?redirect=shipping"}>register now!</Link>
+        </Link>
+             或
+          <Link to={"/register-page"}>
+          <Button type="primary" htmlType="submit">
+            現在註冊!
+            </Button>
+          </Link>
+        
+
       </Form.Item>
     </Form>
   );
