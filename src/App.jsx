@@ -9,8 +9,11 @@ import './App.css';
 import About from './pages/About';
 import Home from './pages/Home';
 import Product from './pages/Product';
-import Login from './pages/Login'
-
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Shipping from './pages/Shipping';
+// import { feedProducts } from './api';
+// feedProducts();
 function App() {
 
   return (
@@ -26,6 +29,8 @@ function App() {
               <Route path="id/:productId" element={<Product />} />
             </Route>
             <Route path='logIn-page' element={<Login/>} /> 
+            <Route path='register-page' element={<Register/>}/>
+            <Route path='shipping-page' element={<Shipping/>}/>
           </Routes>
         </BrowserRouter>
         </HelmetProvider>

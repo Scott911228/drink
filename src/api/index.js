@@ -1,5 +1,5 @@
 import { getApps, getApp, initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc, getDocs, deleteDoc } from "firebase/firestore";
+import { getFirestore, collection, doc, setDoc, getDoc, getDocs, deleteDoc, query, where } from "firebase/firestore/lite"
 import products from "../json/products.json";
 
 const firebaseConfig = {
@@ -27,10 +27,10 @@ products.forEach(async(doc)=>{
 
 export const feedProducts = async () => {
   // DELETE ALL EXISTING DOCS
-  const querySnapshot = await getDocs(productsCollection);
-  querySnapshot.forEach(async (product) => {
-    await deleteDoc(doc(db, "products", product.id));
-  });
+  // const querySnapshot = await getDocs(productsCollection);
+  // querySnapshot.forEach(async (product) => {
+  //   await deleteDoc(doc(db, "products", product.id));
+  // });
   // ADD NEW DOCS
   products.forEach(async (product) => {
     const docRef = await doc(productsCollection);
