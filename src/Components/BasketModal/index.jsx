@@ -85,7 +85,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                                     { value: '去冰', label: '去冰' }
                                  ]}
                               >
-                                 
+
                               </Select>
                            </div>
                         </div>
@@ -132,14 +132,18 @@ export default function BasketModal({ isOpen, toggleModal }) {
          <div className={styles.wrap}>
             <div className={styles.totalPrice}><span>總價${getTotalPrice()}元</span></div>
          </div>
+         <Link to="/logIn-page" style={{ marginLeft: 12 }}>
+            <Button
+               className={styles.btn}
+               type="primary"
+            >
+               <div>
+                  <FontAwesomeIcon icon={faBagShopping} />
+                  <div>前往結帳</div>
+               </div>
 
-         <Button
-            className={styles.btn}
-            type="primary"
-         >
-            <FontAwesomeIcon icon={faBagShopping} />
-            <span style={{ marginLeft: 12 }}>前往結帳</span>
-         </Button>
+            </Button>
+         </Link>
       </Modal>
    );
 }

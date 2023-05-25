@@ -25,6 +25,7 @@ function App() {
               <Route path="category/:categoryName" element={<Home />} />
               <Route path="id/:productId" element={<Product />} />
             </Route>
+            <Route path='logIn-page' element={<Login/>} /> 
           </Routes>
         </BrowserRouter>
         </HelmetProvider>
