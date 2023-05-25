@@ -50,6 +50,9 @@ const RegisterCard = () => {
        {...formItemLayout}
        form={form}
        name="register"
+       style={{
+        width:'70%',
+       }}
        onFinish={onFinish}
        className="register-form"
        scrollToFirstError
@@ -127,6 +130,9 @@ const RegisterCard = () => {
 
        <Form.Item
          name="agreement"
+         style={{
+          marginLeft:"270px"
+         }}
          valuePropName="checked"
          rules={[
            {
@@ -142,8 +148,15 @@ const RegisterCard = () => {
            我同意 <Link to="">隱私政策</Link>
          </Checkbox>
        </Form.Item>
-       <Form.Item {...tailFormItemLayout}>
+       <Form.Item
+        style={{
+          marginLeft:"270px"
+        }}
+       {...tailFormItemLayout}>
          <Button
+          style={{
+            marginRight:"250px"
+          }}
            type="primary"
            className="login-form__button"
            htmlType="submit"

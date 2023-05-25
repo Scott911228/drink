@@ -99,6 +99,12 @@
     height: 40px;
 }
 
+.goTo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 372px) {
     .qty {
         font-size: 20px;

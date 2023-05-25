@@ -1,10 +1,12 @@
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import Content from "../Components/Content";
+import MotionDiv from "../Components/motion.jsx";
 
 function about() {
+
     return (
-        <div className="container mainLayout">
+        <MotionDiv className="container mainLayout">
             <Header
                 className="layoutHeader"
                 title="飲料商品賣場"
@@ -12,7 +14,7 @@ function about() {
             />
             <Content className="layoutContent" />
             <Footer className="layoutFooter" />
-        </div>
+        </MotionDiv>
     );
 
 }

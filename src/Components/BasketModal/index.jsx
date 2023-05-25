@@ -137,7 +137,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                className={styles.btn}
                type="primary"
             >
-               <div>
+               <div className={styles.goTo}>
                   <FontAwesomeIcon icon={faBagShopping} />
                   <div>前往結帳</div>
                </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import "./logincard.module.css";
 import { Link } from "react-router-dom";
 import { Form, Input, Button, Checkbox } from 'antd';
 import { MailOutlined, LockOutlined } from "@ant-design/icons";
@@ -39,6 +40,11 @@ const LoginCard = () => {
     <Form
       name="normal_login"
       className="login-form"
+      style={{
+         width: '50%',
+         marginLeft: "280px",
+         marginTop: "50px"
+        }}
       form={form}
       initialValues={{
         remember: true,
@@ -81,7 +87,7 @@ const LoginCard = () => {
           placeholder="Password"
         />
       </Form.Item>
-      <Form.Item>
+      <Form.Item style={{marginLeft:"410px"}}>
         <Form.Item name="remember" valuePropName="checked" noStyle>
           <Checkbox>記住密碼</Checkbox>
         </Form.Item>
@@ -91,15 +97,20 @@ const LoginCard = () => {
         </Link>
       </Form.Item>
 
-      <Form.Item>
+      <Form.Item
+        style={{
+          display:"flex",
+          justifyContent:"center"
+        }}
+      >
       <Link to={"/shipping-page"}>
-        <Button type="primary" htmlType="submit" className="login-form__button">
+        <Button style={{height:"40px"}} type="primary" htmlType="submit" className="login-form__button">
           登入
         </Button>
         </Link>
              或
           <Link to={"/register-page"}>
-          <Button type="primary" htmlType="submit">
+          <Button style={{height:"40px"}} type="primary" htmlType="submit">
             現在註冊!
             </Button>
           </Link>

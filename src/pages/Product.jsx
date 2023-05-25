@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { theme } from 'antd';
 import { Helmet } from "react-helmet-async"
+import MotionDiv from "../Components/motion.jsx";
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import ProductDetail from "../Components/ProductDetail";
@@ -16,7 +17,7 @@ function Product() {
     );
 
     return (
-        <div className="container mainLayout">
+        <MotionDiv className="container mainLayout">
             <Helmet>
                 <title>商品列表</title>
                 <style>{`
@@ -33,7 +34,7 @@ function Product() {
             />
             <ProductDetail product={product} className="layoutContent" />
             <Footer className="layoutFooter" />
-        </div>
+        </MotionDiv>
     );
 }
 
