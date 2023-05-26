@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React from 'react';
+import './registercard.module.css'
 import { Form, Input, Checkbox, Button } from 'antd';
 import { useNavigate } from "react-router-dom";
 import { createClient } from '@supabase/supabase-js'
@@ -68,6 +69,8 @@ const RegisterCard = () => {
        name="register"
        style={{
         width:'70%',
+        marginLeft:"50px",
+        marginTop:"30px"
        }}
        onFinish={onFinish}
        className="register-form"
@@ -76,7 +79,6 @@ const RegisterCard = () => {
        <Form.Item
          name="name"
          label="帳號名稱"
-         tooltip="希望別人怎麼稱呼你?"
          rules={[
            {
              required: true,
@@ -171,7 +173,10 @@ const RegisterCard = () => {
        {...tailFormItemLayout}>
          <Button
           style={{
-            marginRight:"250px"
+            marginRight:"250px",
+            marginBottom:"30px",
+            height:"40px",
+            width:"50%"
           }}
            type="primary"
            className="login-form__button"

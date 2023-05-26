@@ -1,0 +1,29 @@
+.ant-input {
+    color: black !important;
+}
+
+label {
+    color: black !important;
+}
+
+.ant-checkbox+span {
+    font-size: 14px !important;
+}
+
+.ant-checkbox-inner {
+   border-color: gray !important;
+}
+
+.email {
+    margin-left: -10px !important;
+}
+
+.css-dev-only-do-not-override-10svna3 ant-btn-primary span {
+    font-size: 16px !important;
+}
+
+.ant-form-item-control-input-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+}

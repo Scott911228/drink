@@ -81,7 +81,7 @@ function Home() {
             <Header
                 className="layoutHeader"
                 title={title}
-                nav="最健康又養生的飲料都在這裡"
+                nav=""
             />
 
             <ProductList products={products} className="layoutContent" />

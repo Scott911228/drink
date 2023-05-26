@@ -1,5 +1,5 @@
 import React from "react";
-import "./logincard.module.css";
+import './logincard.css';
 import { Link } from "react-router-dom";
 import { Form, Input, Button, Checkbox } from 'antd';
 import { MailOutlined, LockOutlined } from "@ant-design/icons";
@@ -52,6 +52,8 @@ const LoginCard = () => {
 
     >
       <Form.Item
+        className="email"
+        label="e-mail"
         name="Email"
         rules={[
           {
@@ -71,6 +73,7 @@ const LoginCard = () => {
         />
       </Form.Item>
       <Form.Item
+        label="密碼"
         name="Password"
         rules={[
           {
@@ -86,32 +89,22 @@ const LoginCard = () => {
           placeholder="Password"
         />
       </Form.Item>
-      <Form.Item style={{ marginLeft: "410px" }}>
+      <Form.Item style={{ marginLeft: "480px" }}>
         <Form.Item name="remember" valuePropName="checked" noStyle>
           <Checkbox>記住密碼</Checkbox>
         </Form.Item>
 
-        <Link className="login-form__forgot" to={"/"}>
-          忘記密碼
-        </Link>
       </Form.Item>
 
       <Form.Item
-        style={{
-          display: "flex",
-          justifyContent: "center"
-        }}
       >
         
-          <Button style={{ height: "40px" }} type="primary" htmlType="submit" className="login-form__button">
+          <Button style={{ height: "40px" ,width:"100%" ,marginBottom:"30px" }} type="primary" htmlType="submit" className="login-form__button">
             登入
           </Button>
-      
-        或
         <Link to={"/register-page"}>
-          <Button style={{ height: "40px" }} type="primary" htmlType="submit">
             現在註冊!
-          </Button>
+
         </Link>
 
 

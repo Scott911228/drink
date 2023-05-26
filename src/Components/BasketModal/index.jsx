@@ -134,6 +134,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
          </div>
          <Link to="/logIn-page" style={{ marginLeft: 12 }}>
             <Button
+               style={{height:"40px"}}
                className={styles.btn}
                type="primary"
             >
