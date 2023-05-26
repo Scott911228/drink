@@ -11,7 +11,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import Login from './pages/Login';
-import Register from './pages/Register';
+import Register from './pages/register';
 import Shipping from './pages/Shipping';
 // import { feedProducts } from './api';
 // feedProducts();
