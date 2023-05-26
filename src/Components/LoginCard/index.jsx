@@ -3,34 +3,33 @@ import "./logincard.module.css";
 import { Link } from "react-router-dom";
 import { Form, Input, Button, Checkbox } from 'antd';
 import { MailOutlined, LockOutlined } from "@ant-design/icons";
-
+import { useNavigate } from "react-router-dom";
 import { createClient } from '@supabase/supabase-js'
 
 const supabase = createClient('https://zekspmqanzmaqnuzqtlt.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpla3NwbXFhbnptYXFudXpxdGx0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ5OTE3OTIsImV4cCI6MjAwMDU2Nzc5Mn0.-sg1Sjw5clKnOAFfqNxZbZ4OeBWKwX2nMzHvSdgvoIM')
 
 const LoginCard = () => {
   const [form] = Form.useForm();
-
+  const navigate= useNavigate();
 
   const onFinishFailed = (errorInfo) => {
     console.log('Failed: ', errorInfo.errorFields[0].errors[0])
   };
 
-  const onFinish = (values) => {
-    const { email, password } = form.getFieldsValue();
-    const { data, error } = supabase.auth.signUp({
-      email: email,
-      password: password,
-    })
-
-    if (error) {
-      console.log('fff');
-    }
-
-    if (data) {
+  const onFinish = async(values) => {
+    const { Email, Password } = form.getFieldsValue();
 
 
-    }
+    await supabase.auth.signInWithPassword({
+      email: Email,
+      password: Password,
+    }).then((response) => {
+      response.error ?
+        alert("Wrong Data , Please Retype") :
+        navigate("/")
+    });
+
+
 
 
     console.log('Received values of form: ', values);
@@ -41,10 +40,10 @@ const LoginCard = () => {
       name="normal_login"
       className="login-form"
       style={{
-         width: '50%',
-         marginLeft: "280px",
-         marginTop: "50px"
-        }}
+        width: '50%',
+        marginLeft: "280px",
+        marginTop: "50px"
+      }}
       form={form}
       initialValues={{
         remember: true,
@@ -53,15 +52,15 @@ const LoginCard = () => {
 
     >
       <Form.Item
-        name="email"
+        name="Email"
         rules={[
           {
             type: "email",
-            message: "The input is not valid E-mail!",
+            message: "輸入的電子信箱錯誤",
           },
           {
             required: true,
-            message: "Please input your E-mail!",
+            message: "輸入你的email",
           },
         ]}
         hasFeedback
@@ -72,11 +71,11 @@ const LoginCard = () => {
         />
       </Form.Item>
       <Form.Item
-        name="password"
+        name="Password"
         rules={[
           {
             required: true,
-            message: "Please input your Password!",
+            message: "輸入密碼!",
           },
         ]}
         hasFeedback
@@ -87,7 +86,7 @@ const LoginCard = () => {
           placeholder="Password"
         />
       </Form.Item>
-      <Form.Item style={{marginLeft:"410px"}}>
+      <Form.Item style={{ marginLeft: "410px" }}>
         <Form.Item name="remember" valuePropName="checked" noStyle>
           <Checkbox>記住密碼</Checkbox>
         </Form.Item>
@@ -99,22 +98,22 @@ const LoginCard = () => {
 
       <Form.Item
         style={{
-          display:"flex",
-          justifyContent:"center"
+          display: "flex",
+          justifyContent: "center"
         }}
       >
-      <Link to={"/shipping-page"}>
-        <Button style={{height:"40px"}} type="primary" htmlType="submit" className="login-form__button">
-          登入
-        </Button>
-        </Link>
-             或
-          <Link to={"/register-page"}>
-          <Button style={{height:"40px"}} type="primary" htmlType="submit">
-            現在註冊!
-            </Button>
-          </Link>
         
+          <Button style={{ height: "40px" }} type="primary" htmlType="submit" className="login-form__button">
+            登入
+          </Button>
+      
+        或
+        <Link to={"/register-page"}>
+          <Button style={{ height: "40px" }} type="primary" htmlType="submit">
+            現在註冊!
+          </Button>
+        </Link>
+
 
       </Form.Item>
     </Form>

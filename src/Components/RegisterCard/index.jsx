@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from 'react';
 import { Form, Input, Checkbox, Button } from 'antd';
-
+import { useNavigate } from "react-router-dom";
 import { createClient } from '@supabase/supabase-js'
 
 const supabase = createClient('https://zekspmqanzmaqnuzqtlt.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpla3NwbXFhbnptYXFudXpxdGx0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ5OTE3OTIsImV4cCI6MjAwMDU2Nzc5Mn0.-sg1Sjw5clKnOAFfqNxZbZ4OeBWKwX2nMzHvSdgvoIM')
@@ -40,9 +40,25 @@ const tailFormItemLayout = {
 
 const RegisterCard = () => {
    const [form] = Form.useForm();
+   const navigate = useNavigate();
 
-   const onFinish = (values) => {
-     console.log('Received values of form: ', values);
+    // 可以根據需求添加其他自訂屬性
+   const onFinish = async(values) => {
+      console.log('Received values of form: ', values);
+      const { name, email, password} = form.getFieldsValue();
+
+
+      await supabase.auth.signUp({
+        email: email,
+        password: password,
+        options: {
+          data: {
+            user_name: name
+          },
+        },
+    }).then((response) => {
+        response.error ? alert("請重新輸入") : navigate("/")
+      });
    };
  
    return (
@@ -89,8 +105,8 @@ const RegisterCard = () => {
        </Form.Item>
 
        <Form.Item
-         name="密碼"
-         label="Password"
+         name="password"
+         label="密碼"
          rules={[
            {
              required: true,
@@ -103,8 +119,8 @@ const RegisterCard = () => {
        </Form.Item>
 
        <Form.Item
-         name="重複輸入密碼"
-         label="Re-enter Password"
+         name="repassword"
+         label="確認密碼"
          dependencies={["password"]}
          hasFeedback
          rules={[
