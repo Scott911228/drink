@@ -3,23 +3,10 @@ import { Link } from "react-router-dom";
 import styles from "./header.module.css";
 import CartSummary from "../CartSummary";
 import logo from '../../assets/logo.png';
-import { useState,useEffect } from 'react';
-import { createClient } from '@supabase/supabase-js'
+import { useState, useEffect } from 'react';
 
-const supabase = createClient('https://zekspmqanzmaqnuzqtlt.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpla3NwbXFhbnptYXFudXpxdGx0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ5OTE3OTIsImV4cCI6MjAwMDU2Nzc5Mn0.-sg1Sjw5clKnOAFfqNxZbZ4OeBWKwX2nMzHvSdgvoIM')
 
 export default function Header({ title, nav }) {
-    const [session, setSession] = useState()
-    useEffect(() => {
-        supabase.auth.getSession().then(({ data: { session } }) => {
-            setSession(session)
-        })
-
-        supabase.auth.onAuthStateChange((_event, session) => {
-            setSession(session)
-        })
-
-    }, [])
 
     return (
         <div className={styles.header}>
@@ -57,12 +44,7 @@ export default function Header({ title, nav }) {
                     </div>
                 </ul>
             </nav>
-            {
-             session ?  <div> {session.user.user_metadata.user_name} <button className="button block" type="button" onClick={() => supabase.auth.signOut()}>
-             登出
-           </button></div>:null
-            }
-            
+
             <hr className={styles.hrHeaderLine} />
         </div>
     );

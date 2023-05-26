@@ -48,6 +48,21 @@
   }
 } 
 
+.login-link{
+  position: absolute;
+  left: 77%;
+  top:20px;
+}
+
+.logout-link{
+ 
+}
+
+.username{
+  position: absolute;
+  left: 72%;
+  top:20px;
+}
 /*body */
 body{
   font-size:large;
