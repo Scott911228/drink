@@ -7,22 +7,11 @@ import Footer from "../Components/Footer"
 import ProductList from "../Components/ProductList";
 import products from "../json/products.json";
 import { Link } from "react-router-dom";
-import { createClient } from '@supabase/supabase-js'
 import { useState, useEffect } from 'react';
 
-const supabase = createClient('https://zekspmqanzmaqnuzqtlt.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpla3NwbXFhbnptYXFudXpxdGx0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ5OTE3OTIsImV4cCI6MjAwMDU2Nzc5Mn0.-sg1Sjw5clKnOAFfqNxZbZ4OeBWKwX2nMzHvSdgvoIM')
+
 function Home() {
-    const [session, setSession] = useState()
-    useEffect(() => {
-        supabase.auth.getSession().then(({ data: { session } }) => {
-            setSession(session)
-        })
-
-        supabase.auth.onAuthStateChange((_event, session) => {
-            setSession(session)
-        })
-
-    }, [])
+    
     const {
         token: { colorBgBase, colorTextBase },
     } = theme.useToken();
@@ -69,15 +58,7 @@ function Home() {
             }
         `}</style>
             </Helmet>
-            {
-                session ? <div className="username"> {session.user.user_metadata.user_name} <button className="logout-link" type="button" onClick={() => supabase.auth.signOut()}>
-                    登出
-                </button></div> : <Link to={"logIn-page"} className="login-link">
-                    <button className="button block" type="button">
-                        登入
-                    </button>
-                </Link>
-            }
+
             <Header
                 className="layoutHeader"
                 title={title}

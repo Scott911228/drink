@@ -42,7 +42,7 @@
     transition: margin 0.4s;
 }
 
-.nav a:hover {
+.nav li a:hover {
     margin-left: 15px;
     font-size: 1.8rem;
 }
@@ -80,6 +80,25 @@
     border-top: solid 3px;
     border-color:#2c2b2b;
     opacity: 1;
+}
+
+.login-link{
+
+}
+  
+.logout-link{
+    position: relative;
+    height: 10px;
+}
+
+.username{
+  position: absolute;
+  left: 72%;
+  top:20px;
+}
+
+.avatar {
+    
 }
 
 @media (max-width: 372px) {
