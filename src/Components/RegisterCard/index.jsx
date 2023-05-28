@@ -69,7 +69,7 @@ const RegisterCard = () => {
        name="register"
        style={{
         width:'70%',
-        marginLeft:"50px",
+        marginLeft:"120px",
         marginTop:"30px"
        }}
        onFinish={onFinish}
@@ -173,7 +173,7 @@ const RegisterCard = () => {
        {...tailFormItemLayout}>
          <Button
           style={{
-            marginRight:"250px",
+            marginRight:"0px",
             marginBottom:"30px",
             height:"40px",
             width:"50%"

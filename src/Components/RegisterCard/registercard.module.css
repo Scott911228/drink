@@ -1,0 +1,13 @@
+.register-form{
+    
+}
+
+
+@media (max-width: 372px){
+    .register-form{
+        width:70%;
+        margin-left: 50px;
+        
+        
+    }
+}

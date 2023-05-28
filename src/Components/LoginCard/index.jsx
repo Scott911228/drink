@@ -36,14 +36,11 @@ const LoginCard = () => {
   };
 
   return (
+    <div className="form">
     <Form
       name="normal_login"
       className="login-form"
-      style={{
-        width: '50%',
-        marginLeft: "280px",
-        marginTop: "50px"
-      }}
+     
       form={form}
       initialValues={{
         remember: true,
@@ -89,13 +86,14 @@ const LoginCard = () => {
           placeholder="Password"
         />
       </Form.Item>
+      <div className="remember">
       <Form.Item style={{ marginLeft: "480px" }}>
         <Form.Item name="remember" valuePropName="checked" noStyle>
           <Checkbox>記住密碼</Checkbox>
         </Form.Item>
 
       </Form.Item>
-
+      </div>
       <Form.Item
       >
         
@@ -110,6 +108,7 @@ const LoginCard = () => {
 
       </Form.Item>
     </Form>
+    </div>
   );
 };
 export default LoginCard;

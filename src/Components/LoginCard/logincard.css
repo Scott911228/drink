@@ -27,3 +27,24 @@ label {
     flex-direction: column !important;
     align-items: center;
 }
+
+.form{
+    width: 50%;
+    margin-left: 320px;
+    margin-top: 75px; 
+      
+}
+
+@media (max-width: 372px){
+
+.form{
+    width: 50%;
+    margin-left: 200px;
+    margin-top: 4z0px; 
+      
+}
+.remember{
+    width: 25%;
+}
+
+}
