@@ -1,32 +1,31 @@
-
 * {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    color:#2c2b2b;
+    color: #2c2b2b;
 }
 
 .header {
     background-image: linear-gradient(to bottom, #9acaee8a, #dcfffb);
     text-align: center;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .headerTitle {
     font-size: 1.3rem;
-    font-weight:bold;
-    color:#2c2b2b;
+    font-weight: bold;
+    color: #2c2b2b;
 }
 
-.headernav{
+.headernav {
     font-size: 1.6rem;
 }
 
 .imagelist_item {
     margin-left: 30px;
     font-size: 1.5rem;
- 
- }
+
+}
 
 .nav {
     margin-top: 40px;
@@ -78,47 +77,100 @@
     width: 100%;
     border: 0;
     border-top: solid 3px;
-    border-color:#2c2b2b;
+    border-color: #2c2b2b;
     opacity: 1;
 }
 
-.login-link{
-
+.user {
+    position: relative;
 }
-  
-.logout-link{
+
+.user_content1 {
+    display: none;
+}
+
+.user:hover .user_content1 {
+    width: 40px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: -40px;
+    right: 5px;
+    font-size: .4em;
+    background: #346e7a;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.user_content1 span {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    color: #fff;
+    right: 0;
+    top: 0;
+}
+
+.user_content2 {
+    display: none;
+}
+
+.user:hover .user_content2 {
+    width: 40px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: -40px;
+    right: -8px;
+    font-size: .4em;
+    background: #346e7a;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.user_content2 span {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    color: #fff;
+    right: 0;
+    top: 0;
+}
+
+.logout-link {
     position: relative;
     height: 10px;
 }
 
-.username{
-  position: absolute;
-  left: 72%;
-  top:20px;
+.username {
+    position: absolute;
+    left: 72%;
+    top: 20px;
 }
 
-.avatar {
-    
-}
+.avatar {}
 
 @media (max-width: 372px) {
     .headerTitle {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
-    
-    .headernav{
+
+    .headernav {
         font-size: 2.0rem;
     }
 
-    .navlist{
+    .navlist {
         margin-left: 50px;
-        width:80%;
+        width: 80%;
     }
-    .navlist_item{
+
+    .navlist_item {
         font-size: 1.8rem;
     }
 
     .nav div {
         margin-left: 30px;
     }
-  }
+}

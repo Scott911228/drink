@@ -103,22 +103,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
 }
+
 
 @media (max-width: 372px) {
     .qty {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .ice {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .sweet {
-        font-size: 20px;
+        font-size: 18px;
     }
     .title span {
-        font-size: 30px;
+        font-size: 24px;
     }
     
     .image {
@@ -145,11 +147,15 @@
     
     .name {
         font-weight: bold;
-        font-size: 24px;
+        font-size: 20px;
     }
     .totalPrice span {
-        font-size: 26px;
+        font-size: 20px;
         font-weight:bold;
+    }
+
+    .goTo span {
+        font-size: 18px;
     }
     
     .btn {

@@ -86,14 +86,7 @@ const LoginCard = () => {
           placeholder="Password"
         />
       </Form.Item>
-      <div className="remember">
-      <Form.Item style={{ marginLeft: "480px" }}>
-        <Form.Item name="remember" valuePropName="checked" noStyle>
-          <Checkbox>記住密碼</Checkbox>
-        </Form.Item>
 
-      </Form.Item>
-      </div>
       <Form.Item
       >
         

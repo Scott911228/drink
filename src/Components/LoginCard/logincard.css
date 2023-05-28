@@ -22,7 +22,7 @@ label {
     font-size: 16px !important;
 }
 
-.ant-form-item-control-input-content {
+.login-form .ant-form-item-control-input-content {
     display: flex !important;
     flex-direction: column !important;
     align-items: center;

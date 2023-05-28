@@ -132,7 +132,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
          <div className={styles.wrap}>
             <div className={styles.totalPrice}><span>總價${getTotalPrice()}元</span></div>
          </div>
-         <Link to="/logIn-page" style={{ marginLeft: 12 }}>
+         <Link to="/logIn-page">
             <Button
                style={{height:"40px"}}
                className={styles.btn}
@@ -140,7 +140,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
             >
                <div className={styles.goTo}>
                   <FontAwesomeIcon icon={faBagShopping} />
-                  <div>前往結帳</div>
+                  <span>前往結帳</span>
                </div>
 
             </Button>

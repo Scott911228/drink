@@ -58,16 +58,18 @@ export default function Header({ title, nav }) {
                     <div>
                         <CartSummary />
                     </div>
-                    <div>
+                    <div className={styles.user}>
                         {
                             session ? <div style={{ marginLeft: "0px" }} className="username">
 
-                                
+
                                 <span onClick={() => supabase.auth.signOut()}>
+                                    <div className={styles.user_content1}><span>登出</span></div>
                                     <FontAwesomeIcon icon={faUser} className="avatar" size="xl" />
                                     {session.user.user_metadata.user_name}
                                 </span>
-                            </div> : <Link to={"logIn-page"} className="login-link">
+                            </div> : <Link to={"logIn-page"} className={styles.login_link}>
+                                <div className={styles.user_content2}><span>登入</span></div>
                                 <FontAwesomeIcon icon={faUser} className="avatar" size="xl" />
                             </Link>
                         }
