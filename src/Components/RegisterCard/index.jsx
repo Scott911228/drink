@@ -63,134 +63,137 @@ const RegisterCard = () => {
   };
 
   return (
-    <Form
-      {...formItemLayout}
-      form={form}
-      name="register"
-      style={{
-        position:"relative",
-        marginBottom:"50px",
-        width: '70%',
-        marginLeft: "100px",
-        marginTop: "30px"
-      }}
-      onFinish={onFinish}
-      className="register-form"
-      scrollToFirstError
-    >
-      <Form.Item
-        name="name"
-        label="帳號名稱"
-        rules={[
-          {
-            required: true,
-            message: "請輸入帳號!",
-            whitespace: true,
-          },
-        ]}
+    <div className="register-form">
+      <span className="register-title">會員註冊</span>
+      <Form
+        {...formItemLayout}
+        form={form}
+        name="register"
+        style={{
+          position: "relative",
+          marginBottom: "50px",
+          width: '100%',
+          marginTop: "30px"
+        }}
+        onFinish={onFinish}
+        className="register-form"
+        scrollToFirstError
       >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        name="email"
-        label="E-mail"
-        rules={[
-          {
-            type: "email",
-            message: "您輸入的email不存在",
-          },
-          {
-            required: true,
-            message: "請輸入email!",
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-
-      <Form.Item
-        name="password"
-        label="密碼"
-        rules={[
-          {
-            required: true,
-            message: "請輸入密碼!",
-          },
-        ]}
-        hasFeedback
-      >
-        <Input.Password />
-      </Form.Item>
-
-      <Form.Item
-        name="repassword"
-        label="確認密碼"
-        dependencies={["password"]}
-        hasFeedback
-        rules={[
-          {
-            required: true,
-            message: "請重複輸入密碼",
-          },
-          ({ getFieldValue }) => ({
-            validator(_, value) {
-              if (!value || getFieldValue("password") === value) {
-                return Promise.resolve();
-              }
-
-              return Promise.reject(
-                new Error("重複輸入的密碼錯誤")
-              );
+        <Form.Item
+          name="name"
+          label="帳號名稱"
+          rules={[
+            {
+              required: true,
+              message: "請輸入帳號!",
+              whitespace: true,
             },
-          }),
-        ]}
-      >
-        <Input.Password />
-      </Form.Item>
-
-      <Form.Item
-        name="agreement"
-        style={{
-          marginLeft: "270px"
-        }}
-        valuePropName="checked"
-        rules={[
-          {
-            validator: (_, value) =>
-              value
-                ? Promise.resolve()
-                : Promise.reject(new Error("應同意隱私政策")),
-          },
-        ]}
-        {...tailFormItemLayout}
-      >
-      </Form.Item>
-      <Form.Item
-        className="fuk"
-        style={{
-          position:"absolute",
-          left:"45%",
-          bottom:"-60px"
-        }}
-        {...tailFormItemLayout}>
-        <Button
-          style={{
-            marginRight: "50px",
-            marginBottom: "10px",
-            height: "40px",
-            width: "100%"
-          }}
-          type="primary"
-          className="login-form__button"
-          htmlType="submit"
+          ]}
         >
-          創建你的帳號
-        </Button>
+          <Input />
+        </Form.Item>
+        <Form.Item
+          name="email"
+          label="E-mail"
+          rules={[
+            {
+              type: "email",
+              message: "您輸入的email不存在",
+            },
+            {
+              required: true,
+              message: "請輸入email!",
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+
+        <Form.Item
+          name="password"
+          label="密碼"
+          rules={[
+            {
+              required: true,
+              message: "請輸入密碼!",
+            },
+          ]}
+          hasFeedback
+        >
+          <Input.Password />
+        </Form.Item>
+
+        <Form.Item
+          name="repassword"
+          label="確認密碼"
+          dependencies={["password"]}
+          hasFeedback
+          rules={[
+            {
+              required: true,
+              message: "請重複輸入密碼",
+            },
+            ({ getFieldValue }) => ({
+              validator(_, value) {
+                if (!value || getFieldValue("password") === value) {
+                  return Promise.resolve();
+                }
+
+                return Promise.reject(
+                  new Error("重複輸入的密碼錯誤")
+                );
+              },
+            }),
+          ]}
+        >
+          <Input.Password />
+        </Form.Item>
+
+        <Form.Item
+          name="agreement"
+          style={{
+            marginLeft: "270px"
+          }}
+          valuePropName="checked"
+          rules={[
+            {
+              validator: (_, value) =>
+                value
+                  ? Promise.resolve()
+                  : Promise.reject(new Error("應同意隱私政策")),
+            },
+          ]}
+          {...tailFormItemLayout}
+        >
+        </Form.Item>
+        <Form.Item
+          className="fuk"
+          style={{
+            position: "absolute",
+            left: "40%",
+            bottom: "-80px"
+          }}
+          {...tailFormItemLayout}>
+          <Button
+            style={{
+              marginRight: "50px",
+              marginBottom: "10px",
+              height: "40px",
+              width: "100%"
+            }}
+            type="primary"
+            className="login-form__button"
+            htmlType="submit"
+          >
+            創建你的帳號
+          </Button>
           已經有帳號了?{" "}
           <Link to={"/logIn-page"}>前往登入</Link>
 
-      </Form.Item>
-    </Form>
+        </Form.Item>
+      </Form>
+    </div>
+
   );
 };
 export default RegisterCard;

@@ -1,8 +1,48 @@
+.register-form {
+    margin-top: 50px;
+    margin-left: -30px;
+    position: relative;
+}
 
+.register-title {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top:-40px;
+    left: 48%;
+}
+
+.register-form .ant-input-affix-wrapper {
+    width: 65% !important;
+}
+
+.register-form .ant-input {
+    width: 65% !important;
+}
+
+.register-form .ant-input-suffix {
+    margin-left: 300px !important;
+}
 
 @media (max-width: 372px){
-    .fuk {
-        margin-left: -110px !important;
+    .register-title {
+        left: 43%;
+    }
+
+    .register-form .ant-form{
+        width: 80% !important;
+        margin-left: 180px !important;
+    }
+
+    .register-form .ant-input-affix-wrapper {
+        width: 70% !important;
     }
     
+    .register-form .ant-input {
+        width: 70% !important;
+    }
+
+    .fuk {
+        margin-left: -190px !important;
+    }
 }

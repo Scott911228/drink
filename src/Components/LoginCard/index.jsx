@@ -10,13 +10,13 @@ const supabase = createClient('https://zekspmqanzmaqnuzqtlt.supabase.co', 'eyJhb
 
 const LoginCard = () => {
   const [form] = Form.useForm();
-  const navigate= useNavigate();
+  const navigate = useNavigate();
 
   const onFinishFailed = (errorInfo) => {
     console.log('Failed: ', errorInfo.errorFields[0].errors[0])
   };
 
-  const onFinish = async(values) => {
+  const onFinish = async (values) => {
     const { Email, Password } = form.getFieldsValue();
 
 
@@ -37,70 +37,71 @@ const LoginCard = () => {
 
   return (
     <div className="form">
-    <Form
-      name="normal_login"
-      className="login-form"
-     
-      form={form}
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={onFinish}
+      <span className="title">會員登入</span>
+      <Form
+        name="normal_login"
+        className="login-form"
 
-    >
-      <Form.Item
-        className="email"
-        label="e-mail"
-        name="Email"
-        rules={[
-          {
-            type: "email",
-            message: "輸入的電子信箱錯誤",
-          },
-          {
-            required: true,
-            message: "輸入你的email",
-          },
-        ]}
-        hasFeedback
-      >
-        <Input
-          prefix={<MailOutlined className="site-form-item-icon" />}
-          placeholder="E-Mail"
-        />
-      </Form.Item>
-      <Form.Item
-        label="密碼"
-        name="Password"
-        rules={[
-          {
-            required: true,
-            message: "輸入密碼!",
-          },
-        ]}
-        hasFeedback
-      >
-        <Input.Password
-          prefix={<LockOutlined className="site-form-item-icon" />}
-          type="password"
-          placeholder="Password"
-        />
-      </Form.Item>
+        form={form}
+        initialValues={{
+          remember: true,
+        }}
+        onFinish={onFinish}
 
-      <Form.Item
       >
-        
-          <Button style={{ height: "40px" ,width:"100%" ,marginBottom:"30px" }} type="primary" htmlType="submit" className="login-form__button">
+        <Form.Item
+          className="email"
+          label="e-mail"
+          name="Email"
+          rules={[
+            {
+              type: "email",
+              message: "輸入的電子信箱錯誤",
+            },
+            {
+              required: true,
+              message: "輸入你的email",
+            },
+          ]}
+          hasFeedback
+        >
+          <Input
+            prefix={<MailOutlined className="site-form-item-icon" />}
+            placeholder="E-Mail"
+          />
+        </Form.Item>
+        <Form.Item
+          label="密碼"
+          name="Password"
+          rules={[
+            {
+              required: true,
+              message: "輸入密碼!",
+            },
+          ]}
+          hasFeedback
+        >
+          <Input.Password
+            prefix={<LockOutlined className="site-form-item-icon" />}
+            type="password"
+            placeholder="Password"
+          />
+        </Form.Item>
+
+        <Form.Item
+        >
+
+          <Button style={{ height: "40px", width: "100%", marginBottom: "30px", marginTop:"30px" }} type="primary" htmlType="submit" className="login-form__button">
             登入
           </Button>
-        <Link to={"/register-page"}>
+          <Link to={"/register-page"}>
             現在註冊!
 
-        </Link>
+          </Link>
 
 
-      </Form.Item>
-    </Form>
+        </Form.Item>
+      </Form>
     </div>
   );
 };

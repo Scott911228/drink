@@ -6,10 +6,6 @@ label {
     color: black !important;
 }
 
-.ant-checkbox+span {
-    font-size: 14px !important;
-}
-
 .ant-checkbox-inner {
    border-color: gray !important;
 }
@@ -32,7 +28,15 @@ label {
     width: 50%;
     margin-left: 320px;
     margin-top: 75px; 
-      
+    position: relative;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top:-70px;
+    left: 40%;
 }
 
 @media (max-width: 372px){
