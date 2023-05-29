@@ -25,7 +25,7 @@ const LoginCard = () => {
       password: Password,
     }).then((response) => {
       response.error ?
-        alert("Wrong Data , Please Retype") :
+        alert("錯誤的帳號或密碼 請重新輸入") :
         navigate("/")
     });
 
@@ -53,6 +53,9 @@ const LoginCard = () => {
           className="email"
           label="e-mail"
           name="Email"
+          style={{
+            fontSize:'50px'
+          }}
           rules={[
             {
               type: "email",

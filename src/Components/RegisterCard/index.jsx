@@ -150,28 +150,11 @@ const RegisterCard = () => {
         </Form.Item>
 
         <Form.Item
-          name="agreement"
-          style={{
-            marginLeft: "270px"
-          }}
-          valuePropName="checked"
-          rules={[
-            {
-              validator: (_, value) =>
-                value
-                  ? Promise.resolve()
-                  : Promise.reject(new Error("應同意隱私政策")),
-            },
-          ]}
-          {...tailFormItemLayout}
-        >
-        </Form.Item>
-        <Form.Item
           className="fuk"
           style={{
             position: "absolute",
             left: "40%",
-            bottom: "-80px"
+            bottom: "-100px"
           }}
           {...tailFormItemLayout}>
           <Button
@@ -179,7 +162,7 @@ const RegisterCard = () => {
               marginRight: "50px",
               marginBottom: "10px",
               height: "40px",
-              width: "100%"
+              width: "35%"
             }}
             type="primary"
             className="login-form__button"
